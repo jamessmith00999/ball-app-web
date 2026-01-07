@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { getOneTimeToken } from "@/lib";
+import { getOneTimeToken } from "@/lib/auth-client";
 import { getLanguageFromAsyncStorage } from "@/lib/storage";
 import config from "@/config";
 

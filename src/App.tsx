@@ -1,10 +1,17 @@
+import { Provider } from "jotai";
+import { RouterProvider } from "react-router-dom";
+
+import "@/translations";
+
+import { router } from "@/router";
+
 import "./App.scss";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-red-500 text-3xl font-bold underline">Hello World</h1>
-    </div>
+    <Provider>
+      <RouterProvider router={router} />
+    </Provider>
   );
 }
 

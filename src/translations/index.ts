@@ -1,9 +1,8 @@
 // This file defines the initialize of translations
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
-import en from "./en.json";
 import { getLanguage } from "./language";
+import en from "./en.json";
 import zht from "./zht.json";
 
 type TranslationContent = Record<string, unknown>;

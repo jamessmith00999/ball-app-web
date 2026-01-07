@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import config from "@/config";
-import { getOneTimeToken } from "@/lib";
+import { getOneTimeToken } from "@/lib/auth-client";
 
 export const authApi = axios.create({
   baseURL: config.betterAuthUrl,

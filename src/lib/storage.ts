@@ -12,3 +12,49 @@ export const getLanguageFromAsyncStorage = async () => {
   }
   return null;
 };
+
+/**
+ * Simple storage wrapper for localStorage
+ */
+export const storage = {
+  get: (key: string): string | null => {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  },
+
+  set: (key: string, value: string): void => {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      console.error("Failed to set storage item:", key);
+    }
+  },
+
+  remove: (key: string): void => {
+    try {
+      localStorage.removeItem(key);
+    } catch {
+      console.error("Failed to remove storage item:", key);
+    }
+  },
+
+  getJSON: <T>(key: string): T | null => {
+    try {
+      const value = localStorage.getItem(key);
+      return value ? JSON.parse(value) : null;
+    } catch {
+      return null;
+    }
+  },
+
+  setJSON: <T>(key: string, value: T): void => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      console.error("Failed to set storage item:", key);
+    }
+  },
+};

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import config from "@/config";
-import { getOneTimeToken } from "@/lib";
+import { getOneTimeToken } from "@/lib/auth-client";
 import { getLanguageFromAsyncStorage } from "@/lib/storage";
 
 export const futuresApi = axios.create({

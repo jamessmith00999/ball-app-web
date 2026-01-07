@@ -1,16 +1,35 @@
 import {
   emailOTPClient,
   oneTimeTokenClient,
+  phoneNumberClient,
   twoFactorClient,
 } from "better-auth/client/plugins";
 import { createAuthClient } from "better-auth/react";
+import type { User as BetterAuthUser } from "better-auth/types";
 
 import config from "@/config";
 
+/**
+ * Extended User type with optional phone number support and custom fields
+ */
+export interface User extends BetterAuthUser {
+  phoneNumber?: string;
+  phoneNumberVerified?: boolean;
+  birthday?: string;
+  gender?: "male" | "female";
+}
+
 export const authClient = createAuthClient({
   baseURL: config.betterAuthUrl,
+  emailAndPassword: {
+    enabled: true,
+  },
+  phoneNumber: {
+    enabled: true,
+  },
   plugins: [
     emailOTPClient(),
+    phoneNumberClient(),
     oneTimeTokenClient(),
     twoFactorClient({
       onTwoFactorRedirect: () => {
