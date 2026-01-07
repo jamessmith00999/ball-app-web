@@ -1,0 +1,320 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <style type="text/css">
+    body {
+      margin: 0; 
+      padding: 0;
+      position: relative;
+      background: #060612;
+    }
+    #chart {
+      width: 100%; 
+      height: 100%;
+      position: relative;
+    }
+    a#tv-attr-logo {
+      display: none !important;
+    }
+    /* Loading indicator styles */
+    #loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(6, 6, 18, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+    }
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      border-top-color:rgba(208, 205, 191, 0.8);
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 15px;
+    }
+    .loading-text {
+      color: #ACA8A8;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+  <script type="text/javascript">
+    ${KlinePackageJS}
+  </script>
+</head>
+<body>
+  <!-- Loading overlay -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+  
+  <div id="chart"></div>
+  
+  <script>
+    // Track if data has been loaded
+    let dataLoaded = false;
+    let showMACD = false; // Control variable for MACD visibility
+    let showTextWatermark = false;
+    
+    const chart = LightweightCharts.createChart(document.getElementById('chart'), {
+      width: window.innerWidth,
+      height: window.innerHeight,
+      license: 'paid',
+      crosshair: {
+        mode: LightweightCharts.CrosshairMode.MagnetOHLC,
+      },
+      layout: {
+        background: { type: 'solid', color: '#060612' },
+        textColor: '#ACA8A8', 
+        fontSize: 10,
+      },
+      grid: {
+        vertLines: { color: '#151518' }, // grid vertical line color
+        horzLines: { color: '#151518' }, // grid horizontal line color
+      },
+      rightPriceScale: {
+        visible: true,
+      },
+      timeScale: {
+        lockVisibleTimeRangeOnResize: true,
+        timeVisible: false,  
+        secondsVisible: false, 
+        tickMarkFormatter: (time) => {
+          const date = new Date(time * 1000); // to milliseconds
+          const formattedDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' ';
+          return formattedDate; 
+        },
+      },
+      handleScale: {
+        horzTouchDrag: false,
+        vertTouchDrag: false,
+      },
+      handleScroll: {
+        mouseWheel: false,
+        pressedMouseMove: false,
+        horzTouchDrag: true,
+        vertTouchDrag: false,
+      },
+      kineticScroll: {
+        mouse: false,
+        touch: true,
+      },
+    });
+
+    // Add watermark
+    if (showTextWatermark) {
+      const firstPane = chart.panes()[0];
+      const textWatermark = LightweightCharts.createTextWatermark(firstPane, {
+        horzAlign: 'center',
+      vertAlign: 'center', 
+      lines: [
+        {
+          text: 'BestXX',
+          color: 'rgba(255, 255, 255, 0.3)',
+          fontSize: 24,
+        },
+        ],
+      });
+    }
+
+    const candlestickSeries = chart.addSeries(LightweightCharts.CandlestickSeries, {
+      upColor: '#00BB83',   // set up color
+      borderUpColor: '#00BB83',  // set up border color
+      wickUpColor: '#00BB83',    // set up wick color
+      downColor: '#FF4D5C',  // set down color
+      borderDownColor: '#FF4D5C',  // set down border color
+      wickDownColor: '#FF4D5C'   // set down wick color
+    });
+
+    const priceFormatter = (price) => {
+      return price.toFixed(2);
+    }
+
+    chart.applyOptions({
+      localization: {
+        locale: 'en-US',
+        priceFormatter: priceFormatter
+      },
+      timeScale: {
+        fixRightEdge: false, // If true, fixed right edge, prevent left swipe to the bottom
+      },
+    });
+    // k line chart bottom bar
+    candlestickSeries.priceScale().applyOptions({
+        scaleMargins: {
+            // positioning the price scale for the area series
+            top: 0.1,
+            bottom: 0.4,
+            right: 0,
+        },
+    });
+
+    const volumeSeries = chart.addSeries(LightweightCharts.HistogramSeries,{
+        color: '#26a69a',
+        priceFormat: {
+            type: 'volume',
+        },
+        priceScaleId: 'volumePriceScale', // set as an overlay by setting a blank priceScaleId
+        // set the positioning of the volume series
+        scaleMargins: {
+            top: 0.8, // highest point of the series will be 70% away from the top
+            bottom: 0,
+        },
+    });
+    
+    volumeSeries.priceScale().applyOptions({
+        scaleMargins: {
+            top: 0.8, // highest point of the series will be 70% away from the top
+            bottom: 0,
+        },
+    });
+
+    // Add MACD series
+    const macdSeries = chart.addSeries(LightweightCharts.LineSeries, {
+      color: '#ff69b4',
+      lineWidth: 1,
+      priceScaleId: 'macd',
+      title: '',
+      visible: showMACD, // Set initial visibility based on showMACD
+    });
+
+
+    // Configure MACD scale
+    chart.priceScale('macd').applyOptions({
+      scaleMargins: {
+        top: 0.1,
+        bottom: 0.4,
+      },
+      visible: showMACD, // Set initial visibility based on showMACD
+      drawTicks: false,
+      autoScale: true,
+      entireTextOnly: true,
+      borderVisible: false,
+      ticksVisible: false,
+      textColor: 'transparent',   // Make text transparent
+      labelVisible: false,
+    });
+
+    // MACD calculation function
+    function calculateMACD(data) {
+      const ema12 = calculateEMA(data, 12);
+      const ema26 = calculateEMA(data, 26);
+      const macdLine = ema12.map((value, index) => value - ema26[index]);
+      return data.map((candle, index) => ({
+        time: candle.time,
+        macd: macdLine[index],
+      }));
+    }
+
+    function calculateEMA(data, period) {
+      const k = 2 / (period + 1);
+      let ema = [data[0].close];
+
+      for (let i = 1; i < data.length; i++) {
+        ema[i] = data[i].close * k + ema[i - 1] * (1 - k);
+      }
+
+      return ema;
+    }
+    
+    // Function to hide loading overlay
+    function hideLoading() {
+      if (dataLoaded) {
+        const loadingOverlay = document.getElementById('loading-overlay');
+        loadingOverlay.style.opacity = '0';
+        setTimeout(() => {
+          loadingOverlay.style.display = 'none';
+        }, 300);
+      }
+    }
+    
+    // Set a timeout to check if data has been loaded after a certain time
+    // This is helpful if there's a long delay or issue with receiving data
+    const loadingTimeout = setTimeout(() => {
+      if (!dataLoaded) {
+        document.querySelector('.loading-text').textContent = 'No data available. Please check your connection.';
+      }
+    }, 10000); // 10 seconds timeout
+    
+    //iOS Android interaction
+    const u = navigator.userAgent
+    const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android terminal  
+    const boxRef = isAndroid ? document : window;
+    // const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);  // ios terminal
+    boxRef.addEventListener('message', function listener(RnData) {
+      try {
+        const parsedData = JSON.parse(RnData.data);
+        const candlestickData = parsedData.candlestickData;
+        const volumeData = parsedData.volumeData;
+        const realtimeCandle = parsedData.realtimeCandle;
+        const realtimeVolumeCandle = parsedData.realtimeVolumeCandle;
+        
+        // Check if we've received initial data
+        if (candlestickData && candlestickData.length > 0) {
+          candlestickSeries.setData(candlestickData);
+          
+          // Calculate and set MACD data only if showMACD is true
+          if (showMACD) {
+            const macdData = calculateMACD(candlestickData);
+            macdSeries.setData(macdData.map(d => ({ time: d.time, value: d.macd })));
+          }
+          dataLoaded = true;
+        }
+        
+        if (volumeData && volumeData.length > 0) {
+          volumeSeries.setData(volumeData);
+          dataLoaded = true;
+        }
+        
+        if (realtimeCandle) {
+          candlestickSeries.update(realtimeCandle);
+          
+          // Update MACD for realtime data only if showMACD is true
+          if (showMACD) {
+            const allData = [...candlestickSeries.data(), realtimeCandle];
+            const macdData = calculateMACD(allData);
+            const lastMACD = macdData[macdData.length - 1];
+            macdSeries.update({ time: lastMACD.time, value: lastMACD.macd });
+          }
+        }
+        
+        if (realtimeVolumeCandle) {
+          volumeSeries.update(realtimeVolumeCandle);
+        }
+        
+        // Hide loading indicator if data has been loaded
+        if (dataLoaded) {
+          clearTimeout(loadingTimeout);
+          hideLoading();
+        }
+      } catch (error) {
+        console.error('Error processing data:', error);
+        document.querySelector('.loading-text').textContent = 'Error loading data. Please try again later.';
+      }
+    });
+    
+    // Handle window resize to make chart responsive
+    window.addEventListener('resize', () => {
+      chart.applyOptions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    });
+  </script>
+</body>
+</html>

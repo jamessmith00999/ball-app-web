@@ -1,0 +1,1284 @@
+{
+  "adminUsers": {
+    "actions": {
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit"
+    },
+    "creating": "Creating admin user...",
+    "batchDeleteConfirm": "Are you sure you want to delete {{count}} admin users? This action cannot be undone.",
+    "deleteConfirm": "Are you sure you want to delete admin user \"{{name}}\"? This action cannot be undone.",
+    "deleteConfirmTitle": "Delete Admin User",
+    "deleting": "Deleting admin user...",
+    "filter": {
+      "email": "Email",
+      "emailPlaceholder": "Search Email",
+      "phone": "Phone",
+      "phonePlaceholder": "Search Phone",
+      "uid": "UID",
+      "uidPlaceholder": "Search UID"
+    },
+    "freezeSuccess": "User frozen successfully",
+    "freezingUser": "Freezing user...",
+    "modal": {
+      "addTitle": "Add Admin User",
+      "editTitle": "Edit Admin User",
+      "email": "Email",
+      "emailPlaceholder": "Please enter email",
+      "name": "Username",
+      "namePlaceholder": "Please enter username",
+      "nickname": "Nickname",
+      "nicknamePlaceholder": "Please enter nickname",
+      "password": "Password",
+      "passwordHint": "Password must be at least 8 characters with uppercase, lowercase, and numbers",
+      "passwordPlaceholder": "Please enter password",
+      "remark": "Remark",
+      "remarkPlaceholder": "Please enter remark",
+      "role": "Role",
+      "selectRole": "Please select role",
+      "status": "Status",
+      "statusInvalid": "Invalid",
+      "statusNormal": "Normal",
+      "validation": {
+        "emailDuplicate": "This email is already in use",
+        "emailRequired": "Please enter email",
+        "nameRequired": "Please enter username",
+        "nicknameRequired": "Please enter nickname",
+        "passwordRequired": "Please enter password",
+        "passwordRequirements": "Password must be at least 8 characters with uppercase, lowercase, and numbers",
+        "roleRequired": "Please select at least one role"
+      }
+    },
+    "table": {
+      "createdTime": "Created Time",
+      "loginInfo": "Login Info",
+      "nickname": "Nickname",
+      "role": "Role",
+      "status": "Status",
+      "uid": "UID"
+    },
+    "unfreezeSuccess": "User unfrozen successfully",
+    "unfreezingUser": "Unfreezing user...",
+    "updateStatusFailed": "Failed to update user status",
+    "updating": "Updating admin user..."
+  },
+  "auth": {
+    "errors": {
+      "accountLocked": "Account is locked",
+      "accountNotVerified": "Account is not verified",
+      "emailAlreadyExists": "Email already exists",
+      "emailNotVerified": "Email is not verified",
+      "invalidCredentials": "Invalid email or password",
+      "invalidEmail": "Invalid email address",
+      "invalidOtp": "Invalid verification code",
+      "invalidPassword": "Invalid password",
+      "invalidToken": "Invalid token",
+      "invalidTwoFactorCode": "Invalid two-factor authentication code",
+      "otpExpired": "Verification code expired",
+      "otpNotFound": "Verification code not found",
+      "sessionExpired": "Session expired, please sign in again",
+      "sessionNotFound": "Session not found",
+      "tokenExpired": "Token expired",
+      "tokenNotFound": "Token not found",
+      "tooManyRequests": "Too many requests, please try again later",
+      "twoFactorAlreadyEnabled": "Two-factor authentication is already enabled",
+      "twoFactorNotEnabled": "Two-factor authentication is not enabled",
+      "twoFactorRequired": "Two-factor authentication required",
+      "unauthorized": "Unauthorized access",
+      "unknown": "An unexpected error occurred",
+      "userNotFound": "User not found",
+      "weakPassword": "Password is too weak"
+    },
+    "signInSuccess": "Successfully signed in"
+  },
+  "bannerManagement": {
+    "actions": {
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit"
+    },
+    "deleteConfirmation": {
+      "confirm": "Delete",
+      "deleting": "Deleting banner...",
+      "failed": "Failed to delete banner",
+      "message": "Are you sure you want to delete this banner? This action cannot be undone.",
+      "success": "Banner deleted successfully",
+      "title": "Delete Banner"
+    },
+    "filter": {
+      "createdTime": "Created Time",
+      "uid": "ID",
+      "uidPlaceholder": "Search ID"
+    },
+    "modal": {
+      "addTitle": "Add Banner",
+      "clickToUpload": "Click to upload",
+      "createFailed": "Failed to create banner",
+      "createSuccess": "Banner created successfully",
+      "creating": "Creating banner...",
+      "editTitle": "Edit Banner",
+      "errors": {
+        "imageRequired": "Please upload a banner image",
+        "imageSizeExceeded": "File size cannot exceed 10MB",
+        "invalidImageFormat": "Only PNG/JPG/JPEG formats are supported",
+        "invalidSort": "Please enter a valid number (0-999999)",
+        "uploadFailed": "Failed to upload image"
+      },
+      "fields": {
+        "imageUpload": "Image Upload",
+        "jumpMatch": "Jump Match UIDs",
+        "sortOrder": "Sort Order",
+        "status": "Status"
+      },
+      "hints": {
+        "imageUpload": "Supports PNG/JPG/JPEG format, file size up to 10MB"
+      },
+      "placeholders": {
+        "jumpMatch": "Enter match UIDs, separate multiple with ,",
+        "sortOrder": "Enter a number, smaller number ranks higher"
+      },
+      "statusOptions": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "updateFailed": "Failed to update banner",
+      "updateSuccess": "Banner updated successfully",
+      "updating": "Updating banner...",
+      "uploadSuccess": "Image uploaded successfully",
+      "uploading": "Uploading..."
+    },
+    "status": {
+      "active": "Active",
+      "disableFailed": "Failed to disable banner",
+      "disableSuccess": "Banner disabled successfully",
+      "enableFailed": "Failed to enable banner",
+      "enableSuccess": "Banner enabled successfully",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "createdAt": "Created Time",
+      "image": "Image",
+      "sort": "Sort",
+      "status": "Status",
+      "uid": "ID"
+    }
+  },
+  "betRecords": {
+    "filter": {
+      "all": "All",
+      "createdTime": "Created Time",
+      "loginInfo": "Login Info",
+      "loginInfoPlaceholder": "Search Email/Phone",
+      "marketType": "Market Type",
+      "marketTypePlaceholder": "Select Market Type",
+      "orderNo": "Order No",
+      "orderNoPlaceholder": "Search Order No",
+      "playType": "Play Type",
+      "playTypePlaceholder": "Select Play Type",
+      "sportType": "Sport Type",
+      "sportTypePlaceholder": "Select Sport Type",
+      "uid": "UID",
+      "uidPlaceholder": "Search UID"
+    },
+    "marketType": {
+      "european": "European",
+      "hongkong": "Hong Kong",
+      "indonesian": "Indonesian",
+      "malay": "Malay"
+    },
+    "matchStatus": {
+      "cancelled": "Cancelled",
+      "finished": "Finished",
+      "ongoing": "Ongoing"
+    },
+    "modal": {
+      "betAmount": "Bet Amount",
+      "betForm": "Bet Form",
+      "betOption": "Bet Option",
+      "betScore": "Bet Score",
+      "betTime": "Bet Time",
+      "betType": "Bet Type",
+      "createdAt": "Created Time",
+      "leagueTeams": "League Teams",
+      "loginInfo": "Login Info",
+      "marketType": "Market Type",
+      "matchId": "Match ID",
+      "matchName": "Match Name",
+      "matchResult": "Match Result",
+      "matchStatus": "Match Status",
+      "matchTime": "Match Time",
+      "nickname": "Nickname",
+      "odds": "Odds",
+      "orderNo": "Order No",
+      "orderStatus": "Order Status",
+      "orderTypeId": "Order Type ID",
+      "playType": "Play Type",
+      "profit": "Final Profit",
+      "regionId": "Region ID",
+      "settledAt": "Settled Time",
+      "settlementMethod": "Settlement Method",
+      "sportType": "Sport Type",
+      "title": "Bet Details",
+      "uid": "UID"
+    },
+    "orderStatus": {
+      "cancelled": "Cancelled",
+      "settled": "Settled",
+      "unsettled": "Unsettled"
+    },
+    "playType": {
+      "1x2": "1x2",
+      "correctScore": "Correct Score",
+      "handicap": "Handicap"
+    },
+    "regionName": {
+      "europe": "Europe"
+    },
+    "settlementMethod": {
+      "auto": "Auto",
+      "manual": "Manual"
+    },
+    "sportType": {
+      "basketball": "Basketball",
+      "soccer": "Soccer"
+    },
+    "table": {
+      "actions": "Actions",
+      "betAmount": "Bet Amount (USDT)",
+      "createdAt": "Created Time",
+      "loginInfo": "Login Info",
+      "marketType": "Market Type",
+      "matchId": "Match ID",
+      "matchName": "Match Name",
+      "matchStatus": "Match Status",
+      "odds": "Odds (European)",
+      "oddsType": "Odds Type",
+      "orderNo": "Order No",
+      "orderStatus": "Order Status",
+      "orderTypeId": "Order Type ID",
+      "playType": "Play Type",
+      "profit": "Profit (USDT)",
+      "regionId": "Region ID",
+      "settledAt": "Settled Time",
+      "settlementMethod": "Settlement Method",
+      "sportType": "Sport Type",
+      "uid": "UID"
+    }
+  },
+  "cancelOrder": {
+    "batchCancel": "Batch Cancel",
+    "cancelAll": "Cancel All",
+    "cancelOrder": "Cancel Order",
+    "confirmBatchCancelMessage": "Are you sure you want to cancel orders for {{count}} rules? This action cannot be undone.",
+    "confirmBatchCancelTitle": "Batch Cancel Confirmation",
+    "confirmCancelAllMessage": "Are you sure you want to cancel all orders? This is a dangerous operation and cannot be undone.",
+    "confirmCancelAllTitle": "Cancel All Confirmation",
+    "confirmCancelMessage": "Are you sure you want to cancel the orders for this rule? This action cannot be undone.",
+    "confirmCancelTitle": "Cancel Order Confirmation",
+    "confirmDeleteMessage": "Are you sure you want to delete this rule? This action cannot be undone.",
+    "confirmDeleteTitle": "Delete Rule Confirmation",
+    "create": "Create",
+    "failedReasons": "Failed reasons",
+    "filter": {
+      "awayTeam": "Away Team",
+      "awayTeamPlaceholder": "Search Away Team",
+      "homeTeam": "Home Team",
+      "homeTeamPlaceholder": "Search Home Team",
+      "loginInfo": "Login Info",
+      "loginInfoPlaceholder": "Search Email/Phone",
+      "matchId": "Match ID",
+      "matchIdPlaceholder": "Enter Match ID",
+      "matchStatus": "Match Status",
+      "orderUid": "Order UID",
+      "orderUidPlaceholder": "Enter Order UID",
+      "sportType": "Sport Type",
+      "tournament": "Tournament",
+      "tournamentPlaceholder": "Search Tournament",
+      "uid": "UID",
+      "uidPlaceholder": "Enter UID"
+    },
+    "matchRules": {
+      "batchCancelFailed": "Batch cancel failed",
+      "batchCancelSuccess": "Batch cancel successful",
+      "cancelAllFailed": "Failed to cancel all orders",
+      "cancelAllSuccess": "All orders canceled successfully",
+      "cancelFailed": "Failed to cancel orders",
+      "cancelSuccess": "Orders canceled successfully",
+      "createFailed": "Failed to create match rule",
+      "createSuccess": "Match rule created successfully",
+      "deleteFailed": "Failed to delete rule",
+      "deleteSuccess": "Rule deleted successfully",
+      "fetchFailed": "Failed to fetch match rules"
+    },
+    "matchSelect": {
+      "fetchFailed": "Failed to fetch matches",
+      "leaveEmptyForAll": "Leave empty for all markets",
+      "noMatchSelected": "Please select a match",
+      "selectMarkets": "Select Markets",
+      "title": "Select Match"
+    },
+    "orderRules": {
+      "batchCancelFailed": "Batch cancel failed",
+      "batchCancelSuccess": "Batch cancel successful",
+      "cancelAllFailed": "Failed to cancel all orders",
+      "cancelAllSuccess": "All orders canceled successfully",
+      "cancelFailed": "Failed to cancel order",
+      "cancelSuccess": "Order canceled successfully",
+      "createFailed": "Failed to create order rule",
+      "createSuccess": "Order rule created successfully",
+      "deleteFailed": "Failed to delete rule",
+      "deleteSuccess": "Rule deleted successfully",
+      "fetchFailed": "Failed to fetch order rules"
+    },
+    "orderSelect": {
+      "fetchFailed": "Failed to fetch orders",
+      "noOrderSelected": "Please select an order",
+      "title": "Select Order"
+    },
+    "selectAll": "Select All",
+    "selectedCount": "{{count}} Selected",
+    "table": {
+      "awayTeam": "Away Team",
+      "betAmount": "Bet Amount",
+      "canceledAt": "Canceled At",
+      "createdAt": "Created At",
+      "homeTeam": "Home Team",
+      "loginInfo": "Login Info",
+      "matchId": "Match ID",
+      "matchStatus": "Match Status",
+      "matchTime": "Match Time",
+      "orderStatus": "Order Status",
+      "orderUid": "Order UID",
+      "ruleId": "Rule ID",
+      "score": "Score",
+      "market": "Cancel Bet Type",
+      "sportType": "Sport Type",
+      "tournament": "Tournament",
+      "uid": "UID"
+    },
+    "tabs": {
+      "matchRules": "Match Rules",
+      "orderRules": "Order Rules"
+    }
+  },
+  "common": {
+    "action": "Action",
+    "all": "All",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "copy": "Copy",
+    "copyFailed": "Failed to copy",
+    "createFailed": "Failed to create",
+    "createSuccess": "Created successfully",
+    "delete": "Delete",
+    "deleteFailed": "Failed to delete",
+    "deleteSuccess": "Deleted successfully",
+    "endDateMustNotBePast": "End date must not be in the past",
+    "go": "Go",
+    "goToPage": "Go to",
+    "loadFailed": "Failed to load data",
+    "loading": "Loading...",
+    "next": "Next",
+    "noData": "No data",
+    "noItemsSelected": "No items selected",
+    "prev": "Previous",
+    "reset": "Reset",
+    "rowsPerPage": "Rows per page",
+    "search": "Search",
+    "selectDate": "Select date",
+    "showing": "Showing {{start}}-{{end}} of {{total}}",
+    "timeMustBeInFuture": "Time must be in the future",
+    "updateFailed": "Failed to update",
+    "updateSuccess": "Updated successfully",
+    "uploadFailed": "Upload failed",
+    "uploadSuccess": "Upload successful",
+    "uploading": "Uploading...",
+    "viewDetails": "View Details",
+    "welcomeToBestxx": "Welcome to Bestxx"
+  },
+  "dashboard": {
+    "timeRange": {
+      "last30days": "Last 30 Days",
+      "last7days": "Last 7 Days",
+      "lastMonth": "Last Month",
+      "selectDateRange": "Select Date Range",
+      "thisMonth": "This Month",
+      "today": "Today",
+      "yesterday": "Yesterday"
+    }
+  },
+  "depositRecords": {
+    "actions": {
+      "delete": "Delete"
+    },
+    "deleteConfirmation": {
+      "confirm": "Delete",
+      "deleting": "Deleting deposit record...",
+      "failed": "Failed to delete deposit record",
+      "message": "Are you sure you want to delete this deposit record? This action cannot be undone.",
+      "success": "Deposit record deleted successfully",
+      "title": "Delete Deposit Record"
+    },
+    "filter": {
+      "createdTime": "Created Time",
+      "nickname": "Nickname",
+      "nicknamePlaceholder": "Search Nickname",
+      "orderNo": "Order No",
+      "orderNoPlaceholder": "Search Order No",
+      "uid": "UID",
+      "uidPlaceholder": "Search UID"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "timeout": "Timeout"
+    },
+    "table": {
+      "chainNetwork": "Chain Network",
+      "createdAt": "Created Time",
+      "depositAmount": "Deposit Amount",
+      "nickname": "Nickname",
+      "orderNo": "Order No",
+      "receiverAddress": "Receiver Address",
+      "senderAddress": "Sender Address",
+      "status": "Status",
+      "uid": "UID"
+    }
+  },
+  "financeStatistics": {
+    "actualProfitLoss": "Actual P&L",
+    "betAmount": "Bet Amount",
+    "cumulativeData": "Cumulative Data",
+    "dataAnalysis": {
+      "last7Days": "Last 7 Days",
+      "time": "Time",
+      "title": "Data Analysis",
+      "todayBetAmount": "Today's Bet Amount",
+      "todayPlatformRevenue": "Today's Platform Revenue",
+      "todayRebateAmount": "Today's Rebate Amount",
+      "todayUserProfitLoss": "Today's User P&L",
+      "todayWithdrawalFee": "Today's Withdrawal Fee"
+    },
+    "rebateAmount": "Rebate Amount",
+    "table": {
+      "time": "Time",
+      "todayBetAmount": "Today Bet Amount (USDT)",
+      "todayProfitLoss": "Today Actual P&L (USDT)",
+      "todayRebateAmount": "Today Rebate Amount (USDT)",
+      "totalBetAmount": "Total Bet Amount (USDT)",
+      "totalProfitLoss": "Total Actual P&L (USDT)",
+      "totalRebateAmount": "Total Rebate Amount (USDT)"
+    },
+    "todayNewData": "Today's New Data",
+    "tooltips": {
+      "actualProfitLoss": "Actual profit and loss = Bet amount - Payout amount",
+      "totalRevenue": "Total revenue = Actual P&L + Withdrawal fee"
+    },
+    "totalActualProfitLoss": "Total Actual P&L",
+    "totalBetAmount": "Total Bet Amount",
+    "totalRebateAmount": "Total Rebate Amount",
+    "totalRevenue": "Total Revenue",
+    "totalTotalRevenue": "Total Revenue",
+    "totalWithdrawalFee": "Total Withdrawal Fee",
+    "usdt": "USDT",
+    "withdrawalFee": "Withdrawal Fee"
+  },
+  "global": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "copiedToClipboard": "Copied: {{text}}",
+    "mobile_warning": "Our application is not supported on mobile devices.",
+    "notUsed": "Not Enabled",
+    "pageNotFound": "Page Not Found",
+    "permissionDenied": "Permission Denied",
+    "signOut": "Sign Out"
+  },
+  "infoPortal": {
+    "announcements": {
+      "actions": {
+        "add": "Add",
+        "delete": "Delete",
+        "edit": "Edit",
+        "viewDetails": "Details"
+      },
+      "batchDeleteConfirmation": {
+        "confirm": "Delete",
+        "deleting": "Deleting announcements...",
+        "failed": "Failed to delete announcements",
+        "message": "Are you sure you want to delete {{count}} announcements? This action cannot be undone.",
+        "success": "Announcements deleted successfully",
+        "title": "Batch Delete Announcements"
+      },
+      "deleteConfirmation": {
+        "confirm": "Delete",
+        "deleting": "Deleting announcement...",
+        "failed": "Failed to delete announcement",
+        "message": "Are you sure you want to delete this announcement? This action cannot be undone.",
+        "success": "Announcement deleted successfully",
+        "title": "Delete Announcement"
+      },
+      "filter": {
+        "createdTime": "Created Time",
+        "publishTime": "Publish Time",
+        "status": "Status",
+        "statusAll": "All"
+      },
+      "modal": {
+        "addTitle": "Add Announcement",
+        "contentLabel": "Content",
+        "contentPlaceholder": "Enter announcement content",
+        "contentRequired": "Content (all languages)",
+        "createFailed": "Failed to create announcement",
+        "createSuccess": "Announcement created successfully",
+        "creating": "Creating announcement...",
+        "editTitle": "Edit Announcement",
+        "fieldsNotFilled": "Please fill in: {{fields}}",
+        "language": "Language",
+        "publishTimeLabel": "Publish Time",
+        "publishTimeRequired": "Publish Time",
+        "statusLabel": "Status",
+        "titleLabel": "Title",
+        "titlePlaceholder": "Enter announcement title",
+        "titleRequired": "Title (all languages)",
+        "updateFailed": "Failed to update announcement",
+        "updateSuccess": "Announcement updated successfully",
+        "updating": "Updating announcement...",
+        "viewTitle": "View Announcement"
+      },
+      "status": {
+        "disableFailed": "Failed to disable announcement",
+        "disableSuccess": "Announcement disabled successfully",
+        "enableFailed": "Failed to enable announcement",
+        "enableSuccess": "Announcement enabled successfully",
+        "offline": "Offline",
+        "online": "Online"
+      },
+      "table": {
+        "content": "Content",
+        "createdTime": "Created Time",
+        "publishTime": "Publish Time",
+        "status": "Status",
+        "title": "Title"
+      }
+    },
+    "gameRules": {
+      "actions": {
+        "add": "Add",
+        "delete": "Delete",
+        "edit": "Edit",
+        "viewDetails": "Details"
+      },
+      "batchDeleteModal": {
+        "confirm": "Delete",
+        "message": "Are you sure you want to delete {{count}} game rules? This action cannot be undone.",
+        "title": "Batch Delete Game Rules"
+      },
+      "category": {
+        "basketball_rules": "Basketball Rules",
+        "general_rules": "General Rules",
+        "live_betting_rules": "Live Betting Rules",
+        "soccer_rules": "Soccer Rules"
+      },
+      "createFailed": "Failed to create game rule",
+      "createSuccess": "Game rule created successfully",
+      "deleteFailed": "Failed to delete game rule",
+      "deleteModal": {
+        "confirm": "Delete",
+        "message": "Are you sure you want to delete this game rule? This action cannot be undone.",
+        "title": "Delete Game Rule"
+      },
+      "deleteSuccess": "Game rule deleted successfully",
+      "filter": {
+        "createdTime": "Created Time",
+        "status": "Status",
+        "statusAll": "All",
+        "type": "Type",
+        "typeAll": "All",
+        "uid": "ID",
+        "uidPlaceholder": "Search ID"
+      },
+      "modal": {
+        "addTitle": "Add Game Rule",
+        "categoryLabel": "Category",
+        "categoryPlaceholder": "Select category",
+        "contentLabel": "Content",
+        "contentPlaceholder": "Enter content",
+        "contentRequired": "Content in all languages",
+        "editTitle": "Edit Game Rule",
+        "fieldsNotFilled": "Please fill in: {{fields}}",
+        "language": "Language",
+        "statusLabel": "Status",
+        "titleLabel": "Title",
+        "titlePlaceholder": "Enter title",
+        "titleRequired": "Title in all languages",
+        "viewTitle": "Game Rule Details"
+      },
+      "status": {
+        "offline": "Offline",
+        "online": "Online"
+      },
+      "table": {
+        "content": "Content",
+        "createdTime": "Created Time",
+        "sort": "Sort",
+        "status": "Status",
+        "title": "Title",
+        "type": "Type"
+      },
+      "updateFailed": "Failed to update game rule",
+      "updateSuccess": "Game rule updated successfully"
+    },
+    "helpCenter": {
+      "actions": {
+        "add": "Add",
+        "delete": "Delete",
+        "edit": "Edit",
+        "viewDetails": "Details"
+      },
+      "batchDeleteModal": {
+        "confirm": "Delete",
+        "message": "Are you sure you want to delete {{count}} FAQs? This action cannot be undone.",
+        "title": "Batch Delete FAQs"
+      },
+      "createFailed": "Failed to create FAQ",
+      "createSuccess": "FAQ created successfully",
+      "deleteFailed": "Failed to delete FAQ",
+      "deleteModal": {
+        "confirm": "Delete",
+        "message": "Are you sure you want to delete this FAQ? This action cannot be undone.",
+        "title": "Delete FAQ"
+      },
+      "deleteSuccess": "FAQ deleted successfully",
+      "filter": {
+        "createdTime": "Created Time",
+        "status": "Status",
+        "statusAll": "All"
+      },
+      "modal": {
+        "addTitle": "Add FAQ",
+        "answerLabel": "Answer",
+        "answerPlaceholder": "Enter answer",
+        "answerRequired": "Answer (all languages)",
+        "categoryLabel": "Category",
+        "editTitle": "Edit FAQ",
+        "fieldsNotFilled": "Please fill in: {{fields}}",
+        "language": "Language",
+        "questionLabel": "Question",
+        "questionPlaceholder": "Enter question",
+        "questionRequired": "Question (all languages)",
+        "statusLabel": "Status",
+        "viewTitle": "View FAQ"
+      },
+      "status": {
+        "offline": "Offline",
+        "online": "Online"
+      },
+      "table": {
+        "answer": "Answer",
+        "createdTime": "Created Time",
+        "question": "Question",
+        "status": "Status"
+      },
+      "updateFailed": "Failed to update FAQ",
+      "updateSuccess": "FAQ updated successfully"
+    },
+    "tabs": {
+      "announcements": "Announcements",
+      "gameRules": "Game Rules",
+      "helpCenter": "Help Center"
+    }
+  },
+  "loginLogs": {
+    "filter": {
+      "loginAddress": "Login Address",
+      "loginAddressPlaceholder": "Enter login address",
+      "loginTime": "Login Time",
+      "status": "Status",
+      "statusAll": "All",
+      "statusFailure": "Failure",
+      "statusSuccess": "Success",
+      "username": "Username",
+      "usernamePlaceholder": "Enter username"
+    },
+    "status": {
+      "failure": "Failure",
+      "success": "Success"
+    },
+    "table": {
+      "accessId": "Access ID",
+      "browser": "Browser",
+      "loginAddress": "Login Address",
+      "loginLocation": "Login Location",
+      "loginStatus": "Login Status",
+      "loginTime": "Login Time",
+      "message": "Message",
+      "os": "Operating System",
+      "username": "Username"
+    }
+  },
+  "matchList": {
+    "actions": {
+      "export": "Export"
+    },
+    "exportFailed": "Export failed",
+    "exportSuccess": "Export successful",
+    "filter": {
+      "awayTeam": "Away Team",
+      "awayTeamPlaceholder": "Search Away Team",
+      "country": "Country",
+      "countryPlaceholder": "Search Country",
+      "homeTeam": "Home Team",
+      "homeTeamPlaceholder": "Search Home Team",
+      "league": "League",
+      "leaguePlaceholder": "Search League",
+      "matchId": "Match ID",
+      "matchIdPlaceholder": "Search Match ID",
+      "matchTime": "Match Time"
+    },
+    "status": {
+      "cancelled": "Cancelled",
+      "ended": "Ended",
+      "fullTime": "Full Time",
+      "halfTime": "Half Time",
+      "notStarted": "Not Started"
+    },
+    "table": {
+      "awayTeam": "Away Team",
+      "betAmount": "Bet Amount",
+      "betUserCount": "Bet Users",
+      "country": "Country",
+      "fullCorner": "Full Corner",
+      "fullRedCard": "Full Red Card",
+      "fullScore": "Full Score",
+      "fullYellowCard": "Full Yellow Card",
+      "halfCorner": "Half Corner",
+      "halfRedCard": "Half Red Card",
+      "halfScore": "Half Score",
+      "halfYellowCard": "Half Yellow Card",
+      "homeTeam": "Home Team",
+      "league": "League",
+      "matchId": "Match ID",
+      "matchTime": "Match Time",
+      "status": "Status"
+    }
+  },
+  "matchResultList": {
+    "actions": {
+      "export": "Export"
+    },
+    "exportFailed": "Export failed",
+    "exportSuccess": "Export successful",
+    "filter": {
+      "awayTeam": "Away Team",
+      "awayTeamPlaceholder": "Search Away Team",
+      "country": "Country",
+      "countryPlaceholder": "Search Country",
+      "homeTeam": "Home Team",
+      "homeTeamPlaceholder": "Search Home Team",
+      "league": "League",
+      "leaguePlaceholder": "Search League",
+      "matchId": "Match ID",
+      "matchIdPlaceholder": "Search Match ID",
+      "matchTime": "Match Time"
+    },
+    "table": {
+      "awayTeam": "Away Team",
+      "betAmount": "Bet Amount",
+      "betUserCount": "Bet Users",
+      "country": "Country",
+      "endTime": "End Time",
+      "fullCorner": "Full Corner",
+      "fullRedCard": "Full Red Card",
+      "fullScore": "Full Score",
+      "fullYellowCard": "Full Yellow Card",
+      "halfCorner": "Half Corner",
+      "halfRedCard": "Half Red Card",
+      "halfScore": "Half Score",
+      "halfYellowCard": "Half Yellow Card",
+      "homeTeam": "Home Team",
+      "league": "League",
+      "matchTime": "Match Time",
+      "uid": "UID"
+    }
+  },
+  "operationLogs": {
+    "actions": {
+      "viewDetails": "Details"
+    },
+    "detailModal": {
+      "browser": "Browser",
+      "country": "Country",
+      "duration": "Duration",
+      "ipAddress": "IP Address",
+      "logId": "Log ID",
+      "method": "Method",
+      "operationTime": "Operation Time",
+      "os": "OS",
+      "path": "Path",
+      "permission": "Permission",
+      "result": "Result",
+      "statusCode": "Status Code",
+      "title": "Log Details",
+      "userAgent": "User Agent",
+      "userEmail": "User Email",
+      "userName": "User Name"
+    },
+    "filter": {
+      "ipAddress": "IP Address",
+      "ipAddressPlaceholder": "Enter IP address",
+      "method": "Method",
+      "methodAll": "All",
+      "operationTime": "Operation Time",
+      "result": "Result",
+      "resultAll": "All",
+      "resultFailure": "Failure",
+      "resultSuccess": "Success",
+      "userName": "User Name",
+      "userNamePlaceholder": "Enter user name"
+    },
+    "status": {
+      "failure": "Failure",
+      "success": "Success"
+    },
+    "table": {
+      "country": "Country",
+      "duration": "Duration",
+      "durationUnit": "ms",
+      "ipAddress": "IP Address",
+      "method": "Method",
+      "operationTime": "Operation Time",
+      "path": "Path",
+      "permission": "Permission",
+      "result": "Result",
+      "userName": "User Name"
+    }
+  },
+  "parameterConfig": {
+    "commissionAndLimits": "Commission & Limits",
+    "confirmUpdate": "Confirm Update",
+    "dailyOrderQueryLimit": "Daily Order Query Limit (Other Users)",
+    "depositSettings": "Deposit Settings",
+    "maximumOrderAmount": "Maximum Order Amount",
+    "maximumPayout": "Maximum Payout Amount",
+    "maximumWithdrawal": "Maximum Withdrawal Amount",
+    "minimumDeposit": "Minimum Deposit Amount",
+    "minimumOrderAmount": "Minimum Order Amount",
+    "minimumWithdrawal": "Minimum Withdrawal Amount",
+    "orderSettings": "Order Settings",
+    "save": "Save",
+    "saving": "Saving...",
+    "teamCommissionRate": "Team Order Commission Rate",
+    "timesPerDay": "times/day",
+    "validation": {
+      "invalidNumber": "Please enter a valid number",
+      "maxValue": "Value cannot be greater than {{max}}",
+      "minValue": "Value cannot be less than {{min}}",
+      "pleaseFixErrors": "Please fix the errors before saving",
+      "required": "This field is required"
+    },
+    "withdrawalFeeRate": "Withdrawal Fee Rate",
+    "withdrawalReviewThreshold": "Withdrawal Review Threshold",
+    "withdrawalSettings": "Withdrawal Settings"
+  },
+  "pointsExchange": {
+    "filter": {
+      "createdTime": "Created Time",
+      "loginInfo": "Login Info",
+      "loginInfoPlaceholder": "Enter Email/Phone",
+      "orderNo": "Order No",
+      "orderNoPlaceholder": "Enter Order No",
+      "uid": "UID",
+      "uidPlaceholder": "Enter UID"
+    },
+    "table": {
+      "createdAt": "Created Time",
+      "loginInfo": "Login Info",
+      "orderNo": "Order No",
+      "pointsAfter": "Points After",
+      "pointsBefore": "Points Before",
+      "pointsExchange": "Points Exchange",
+      "uid": "UID",
+      "vipLevel": "VIP Level"
+    }
+  },
+  "profile": {
+    "backupCodes": "Backup Codes",
+    "backupCodesDescription": "Save these codes in a secure location. Each code can only be used once.",
+    "backupCodesGenerated": "Backup codes downloaded",
+    "copySetupKey": "Copy Setup Key",
+    "disable2FA": "Disable 2FA",
+    "disable2FAConfirm": "Are you sure you want to disable Two-Factor Authentication? This will make your account less secure.",
+    "disable2FASuccess": "Two-Factor Authentication disabled successfully",
+    "disabling2FA": "Disabling...",
+    "email": "Email",
+    "enable2FA": "Enable 2FA",
+    "enable2FASuccess": "Two-Factor Authentication enabled successfully",
+    "enabling2FA": "Enabling...",
+    "enterPassword": "Enter your password",
+    "enterPasswordToEnable": "Enter your password to enable Two-Factor Authentication",
+    "name": "Name",
+    "password": "Password",
+    "passwordRequired": "Password is required",
+    "pleaseEnable2FA": "Please enable Two-Factor Authentication to access other features",
+    "profile": "Profile",
+    "profileSubtitle": "Manage your personal details",
+    "saveToFile": "Save to File",
+    "scanQRCode": "Scan QR Code",
+    "twoFactorAuth": "Two-Factor Authentication",
+    "twoFactorAuthDescription": "Add an extra layer of security to your account",
+    "twoFactorEnabled": "Two-Factor Authentication is enabled",
+    "userId": "User ID",
+    "verificationCode": "Verification Code",
+    "verificationCodeRequired": "Verification code is required",
+    "verifyCode": "Verify Code",
+    "verifying": "Verifying..."
+  },
+  "rebateRecords": {
+    "filter": {
+      "createdTime": "Created Time",
+      "inviterUid": "Inviter UID",
+      "inviterUidPlaceholder": "Enter Inviter UID",
+      "orderUid": "Order UID",
+      "orderUidPlaceholder": "Enter Order UID",
+      "rebateRecordUid": "Rebate Record UID",
+      "rebateRecordUidPlaceholder": "Enter UID",
+      "sportType": "Sport Type",
+      "sportTypeAll": "All",
+      "sportTypePlaceholder": "Select Sport Type",
+      "userLoginInfo": "User Login Info",
+      "userLoginInfoPlaceholder": "Enter Email/Phone",
+      "userUid": "User UID",
+      "userUidPlaceholder": "Enter User UID"
+    },
+    "sportType": {
+      "basketball": "Basketball",
+      "soccer": "Soccer"
+    },
+    "table": {
+      "areaType": "Area Type",
+      "betAmount": "Bet Amount",
+      "commissionAmount": "Commission Amount (USDT)",
+      "commissionRate": "Commission Rate",
+      "createdAt": "Created Time",
+      "inviterLoginInfo": "Inviter Login Info",
+      "inviterUid": "Inviter UID",
+      "matchId": "Match ID",
+      "orderUid": "Order UID",
+      "outcomeValue": "Outcome Value",
+      "profit": "Profit (USDT)",
+      "rebateRecordUid": "Rebate Record UID",
+      "sportType": "Sport Type",
+      "tournamentName": "Tournament Name",
+      "userLoginInfo": "User Login Info",
+      "userUid": "User UID"
+    }
+  },
+  "role": {
+    "add": "Add",
+    "batchDeleteConfirm": "Are you sure you want to delete {{count}} roles? This action cannot be undone.",
+    "createRole": "Create Role",
+    "createdTime": "Created Time",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure you want to delete this role?",
+    "deleteConfirmTitle": "Delete Role",
+    "edit": "Edit",
+    "editRole": "Edit Role",
+    "namePlaceholder": "Enter role name",
+    "permissionAssignment": "Permission Assignment",
+    "roleName": "Role Name",
+    "roleNumber": "UID",
+    "validation": {
+      "nameRequired": "Please enter role name for all languages"
+    }
+  },
+  "sidebar": {
+    "account": {
+      "myAccount": "My Account",
+      "title": "Account"
+    },
+    "adminUsers": "Admin Users",
+    "announcements": "Announcements",
+    "bannerManagement": "Banner Management",
+    "betRecords": "Bet Records",
+    "cancelOrder": "Cancel Order",
+    "customerService": "Customer Service",
+    "depositRecords": "Deposit Records",
+    "faq": "FAQ",
+    "financeStatistics": "Finance Statistics",
+    "infoPortal": "Information Portal",
+    "loginLogs": "Login Logs",
+    "matchList": "Match List",
+    "matchManagement": "Match Management",
+    "matchResultList": "Match Results",
+    "operationLogs": "Operation Logs",
+    "operationManagement": "Operation Management",
+    "orderManagement": "Order Management",
+    "parameterConfig": "Parameter Config",
+    "pointsExchange": "Points Exchange",
+    "rebateRecords": "Rebate Records",
+    "roleManagement": "Role Management",
+    "statistics": "Statistics",
+    "systemManagement": "System Management",
+    "transferRecords": "Transfer Records",
+    "userList": "User List",
+    "userManagement": "User Management",
+    "userStatistics": "User Statistics",
+    "withdrawalOrders": "Withdrawal Orders"
+  },
+  "signInSignUp": {
+    "login": {
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter Email Address",
+      "error": "Sign in failed",
+      "forgetPassword": "Forget Password?",
+      "invalidCredentials": "Invalid email or password",
+      "loginButton": "Sign In",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter Password",
+      "passwordResetMessage": "Please contact support for password reset.",
+      "signingIn": "Signing in...",
+      "success": "Signed in successfully",
+      "title": "Sign In",
+      "validation": {
+        "email": {
+          "invalid": "Invalid email format",
+          "required": "Email is required"
+        },
+        "password": {
+          "lowercase": "Password must contain at least one lowercase letter",
+          "minLength": "Password must be at least 6 characters",
+          "number": "Password must contain at least one number",
+          "required": "Password is required",
+          "special": "Password must contain at least one special character",
+          "uppercase": "Password must contain at least one uppercase letter"
+        }
+      }
+    },
+    "subtitle": "Ball Admin Platform"
+  },
+  "transferRecords": {
+    "actions": {
+      "delete": "Delete"
+    },
+    "filter": {
+      "createdTime": "Created Time",
+      "loginInfo": "Login Info",
+      "loginInfoPlaceholder": "Search Login Info",
+      "orderNo": "Order No",
+      "orderNoPlaceholder": "Search Order No",
+      "type": "Type",
+      "typeAll": "All",
+      "typePlaceholder": "Select Type",
+      "uid": "UID",
+      "uidPlaceholder": "Search UID"
+    },
+    "table": {
+      "amount": "Amount",
+      "balanceAfter": "Balance After",
+      "balanceBefore": "Balance Before",
+      "createdAt": "Created Time",
+      "loginInfo": "Login Info",
+      "orderNo": "Order No",
+      "status": "Status",
+      "type": "Type",
+      "uid": "UID"
+    },
+    "type": {
+      "transferIn": "Exchange to Sports",
+      "transferOut": "Sports to Exchange"
+    }
+  },
+  "userList": {
+    "actions": {
+      "delete": "Delete",
+      "edit": "Edit",
+      "freeze": "Freeze",
+      "unfreeze": "Unfreeze",
+      "updateBalance": "Recharge/Deduction"
+    },
+    "buttons": {
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit",
+      "export": "Export"
+    },
+    "filter": {
+      "createdTime": "Created Time",
+      "loginInfo": "Login Info",
+      "loginInfoPlaceholder": "Search Email/Phone",
+      "nickname": "Nickname",
+      "nicknamePlaceholder": "Search Nickname",
+      "parentUid": "Parent UID",
+      "parentUidPlaceholder": "Search Parent UID",
+      "status": "Status",
+      "statusAll": "All",
+      "statusPlaceholder": "Select Status",
+      "uid": "UID",
+      "uidPlaceholder": "Search UID"
+    },
+    "loginMethod": {
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "modal": {
+      "avatar": "Avatar",
+      "editUserTitle": "Edit User",
+      "emailPhone": "Email / Phone",
+      "freezeConfirmation": "Are you sure you want to freeze user \"{{name}}\"?",
+      "freezeFailed": "Failed to update user status",
+      "freezeSuccess": "User frozen successfully",
+      "freezing": "Freezing user...",
+      "parentUid": "Parent UID",
+      "password": "Password",
+      "passwordHint": "Password must be at least 8 characters with uppercase, lowercase, and numbers",
+      "passwordPlaceholder": "Enter new password (leave empty to keep current)",
+      "uid": "UID",
+      "unfreezeConfirmation": "Are you sure you want to unfreeze user \"{{name}}\"?",
+      "unfreezeSuccess": "User unfrozen successfully",
+      "unfreezing": "Unfreezing user...",
+      "updateFailed": "Failed to update user",
+      "updateSuccess": "User updated successfully",
+      "updating": "Updating user...",
+      "userLevel": "VIP Level",
+      "username": "Display Name",
+      "usernamePlaceholder": "Enter display name",
+      "rechargingUser": "Recharging user...",
+      "deductingUser": "Deducting from user...",
+      "rechargeSuccess": "Recharge successful",
+      "rechargeFailed": "Recharge failed",
+      "deductionSuccess": "Deduction successful",
+      "deductionFailed": "Deduction failed",
+      "invalidNumber": "Please enter a positive or negative number.",
+      "adjustBalanceLabel": "Increase/Decrease Balance",
+      "amountPlaceholder": "Enter amount",
+      "amountHint": "Positive numbers for increase, negative numbers for decrease",
+      "validation": {
+        "fileTooLarge": "File size cannot exceed 2MB",
+        "invalidImageFormat": "Only JPEG, JPG, and PNG images are allowed",
+        "passwordRequirements": "Password must be at least 8 characters with uppercase, lowercase, and numbers",
+        "pleaseFixErrors": "Please fix the errors before submitting",
+        "usernameMaxLength": "Username cannot exceed 20 characters"
+      }
+    },
+    "status": {
+      "frozen": "Frozen",
+      "normal": "Normal"
+    },
+    "table": {
+      "avatar": "Avatar",
+      "createdAt": "Created At",
+      "inviteCode": "Invite Code",
+      "loginInfo": "Login Info",
+      "loginMethod": "Login Method",
+      "nickname": "Nickname",
+      "parentUid": "Parent UID",
+      "status": "Status",
+      "subordinateCount": "Subordinates",
+      "totalRebate": "Total Rebate",
+      "uid": "UID",
+      "vipLevel": "VIP Level",
+      "vipPoints": "VIP Points",
+      "walletBalance": "Wallet Balance"
+    }
+  },
+  "userStatistics": {
+    "cumulativeData": "Cumulative Data",
+    "dataAnalysis": {
+      "last7Days": "Last 7 Days",
+      "time": "Time",
+      "title": "Data Analysis",
+      "todayDeposit": "Today's Deposit",
+      "todayRegistration": "Today's Registration",
+      "todayWithdrawal": "Today's Withdrawal"
+    },
+    "newDeposit": "New Deposit",
+    "newRegistration": "New Registration",
+    "newWithdrawal": "New Withdrawal",
+    "person": "person",
+    "table": {
+      "time": "Time",
+      "todayNewDeposit": "Today New Deposit (USDT)",
+      "todayNewRegistration": "Today New Registration (person)",
+      "todayNewWithdrawal": "Today New Withdrawal (USDT)",
+      "totalDeposit": "Total Deposit (USDT)",
+      "totalUsers": "Total Users (person)",
+      "totalWithdrawal": "Total Withdrawal (USDT)"
+    },
+    "todayData": "Today's New Data",
+    "totalDeposit": "Total Deposit",
+    "totalUsers": "Total Users",
+    "totalWithdrawal": "Total Withdrawal",
+    "usdt": "USDT"
+  },
+  "withdrawalOrders": {
+    "actions": {
+      "approve": "Approve",
+      "delete": "Delete",
+      "reject": "Reject"
+    },
+    "approveConfirmation": {
+      "approving": "Approving withdrawal...",
+      "confirm": "Approve",
+      "failed": "Failed to approve withdrawal",
+      "message": "Are you sure you want to approve this withdrawal request?",
+      "success": "Withdrawal approved successfully",
+      "title": "Approve Withdrawal"
+    },
+    "deleteConfirmation": {
+      "confirm": "Delete",
+      "deleting": "Deleting withdrawal order...",
+      "failed": "Failed to delete withdrawal order",
+      "message": "Are you sure you want to delete this withdrawal order? This action cannot be undone.",
+      "success": "Withdrawal order deleted successfully",
+      "title": "Delete Withdrawal Order"
+    },
+    "filter": {
+      "createdTime": "Created Time",
+      "nickname": "Nickname",
+      "nicknamePlaceholder": "Search Nickname",
+      "orderNo": "Order No",
+      "orderNoPlaceholder": "Search Order No",
+      "uid": "UID",
+      "uidPlaceholder": "Search UID"
+    },
+    "rejectConfirmation": {
+      "confirm": "Reject",
+      "failed": "Failed to reject withdrawal",
+      "message": "Please enter the reason for rejection:",
+      "reasonPlaceholder": "Enter rejection reason",
+      "reasonRequired": "Please enter a rejection reason",
+      "rejecting": "Rejecting withdrawal...",
+      "success": "Withdrawal rejected successfully",
+      "title": "Reject Withdrawal"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "error": "Error",
+      "failed": "Failed",
+      "idle_for_tron_bandwith": "Idle for TRON Bandwidth",
+      "pending": "Approved",
+      "processing": "Processing",
+      "rejected": "Rejected",
+      "success": "Success",
+      "under_review": "Under Review"
+    },
+    "table": {
+      "actions": "Actions",
+      "balanceAfter": "Balance After",
+      "balanceBefore": "Balance Before",
+      "chainNetwork": "Chain Network",
+      "createdAt": "Created Time",
+      "fee": "Fee",
+      "nickname": "Nickname",
+      "orderNo": "Order No",
+      "rejectReason": "Reject Reason",
+      "remark": "Remark",
+      "status": "Status",
+      "uid": "UID",
+      "withdrawalAddress": "Withdrawal Address",
+      "withdrawalAmount": "Withdrawal Amount"
+    }
+  }
+}

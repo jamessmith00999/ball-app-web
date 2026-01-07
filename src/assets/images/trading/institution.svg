@@ -1,0 +1,52 @@
+<svg width="92" height="88" viewBox="0 0 92 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0_29695_19840" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="92"
+    height="88">
+    <path d="M91.5 0.5H0.5V87.5H91.5V0.5Z" fill="white" />
+  </mask>
+  <g mask="url(#mask0_29695_19840)">
+    <path d="M5 84H86.0247" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M46.79 34.2432H79.4253V83.9246" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M63.4316 26.8365V20.2891" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M29.5 12.0474V5.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M19 19.6535V12.2881H40.5445V19.6263" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M27.5 25.5H18.5V34.5H27.5V25.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M40.5 25.5H31.5V34.5H40.5V25.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M27.5 39.5H18.5V48.5H27.5V39.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M40.5 39.5H31.5V48.5H40.5V39.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M27.5 53H18.5V62H27.5V53Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M40.5 53H31.5V62H40.5V53Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M61 39.5H52V48.5H61V39.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M74 39.5H65V48.5H74V39.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M61 53.5H52V62.5H61V53.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M74 53.5H65V62.5H74V53.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M61 67H52V76H61V67Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M74 67H65V76H74V67Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M23.5 83.5V69.5H35.5V83.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M12.4658 83.9184V19.9062H46.4984V83.8887" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M52.4971 34.2065V27.0762H74.0416V34.0926" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+    <path
+      d="M31.75 4.5C31.75 3.25736 30.7426 2.25 29.5 2.25C28.2574 2.25 27.25 3.25736 27.25 4.5C27.25 5.74264 28.2574 6.75 29.5 6.75C30.7426 6.75 31.75 5.74264 31.75 4.5Z"
+      fill="#FFD500" stroke="#060613" stroke-width="1.5" />
+    <path
+      d="M32.5 4.5C32.5 2.84315 31.1569 1.5 29.5 1.5C27.8431 1.5 26.5 2.84315 26.5 4.5C26.5 6.15685 27.8431 7.5 29.5 7.5C31.1569 7.5 32.5 6.15685 32.5 4.5Z"
+      stroke="#060613" />
+    <path
+      d="M6.75 84C6.75 82.7574 5.74264 81.75 4.5 81.75C3.25736 81.75 2.25 82.7574 2.25 84C2.25 85.2426 3.25736 86.25 4.5 86.25C5.74264 86.25 6.75 85.2426 6.75 84Z"
+      fill="#FFD500" stroke="#060613" stroke-width="1.5" />
+    <path
+      d="M7.5 84C7.5 82.3431 6.15685 81 4.5 81C2.84315 81 1.5 82.3431 1.5 84C1.5 85.6569 2.84315 87 4.5 87C6.15685 87 7.5 85.6569 7.5 84Z"
+      stroke="#060613" />
+    <path
+      d="M89.75 84C89.75 82.7574 88.7426 81.75 87.5 81.75C86.2574 81.75 85.25 82.7574 85.25 84C85.25 85.2426 86.2574 86.25 87.5 86.25C88.7426 86.25 89.75 85.2426 89.75 84Z"
+      fill="#FFD500" stroke="#060613" stroke-width="1.5" />
+    <path
+      d="M90.5 84C90.5 82.3431 89.1569 81 87.5 81C85.8431 81 84.5 82.3431 84.5 84C84.5 85.6569 85.8431 87 87.5 87C89.1569 87 90.5 85.6569 90.5 84Z"
+      stroke="#060613" />
+    <path
+      d="M65.75 19.5C65.75 18.2574 64.7426 17.25 63.5 17.25C62.2574 17.25 61.25 18.2574 61.25 19.5C61.25 20.7426 62.2574 21.75 63.5 21.75C64.7426 21.75 65.75 20.7426 65.75 19.5Z"
+      fill="#FFD500" stroke="#060613" stroke-width="1.5" />
+    <path
+      d="M66.5 19.5C66.5 17.8431 65.1569 16.5 63.5 16.5C61.8431 16.5 60.5 17.8431 60.5 19.5C60.5 21.1569 61.8431 22.5 63.5 22.5C65.1569 22.5 66.5 21.1569 66.5 19.5Z"
+      stroke="#060613" />
+  </g>
+</svg>

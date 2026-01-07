@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "naumovs.color-highlight", // Color highlight
+    "i18n-ally.vscode-i18n-ally", // i18n support
+    "bradlc.vscode-tailwindcss", // tailwindCSS
+    "esbenp.prettier-vscode" // prettier
+  ]
+}

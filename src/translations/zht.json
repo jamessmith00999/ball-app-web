@@ -1,0 +1,1284 @@
+{
+  "adminUsers": {
+    "actions": {
+      "add": "新增",
+      "delete": "刪除",
+      "edit": "編輯"
+    },
+    "creating": "正在創建後台用戶...",
+    "batchDeleteConfirm": "確定要刪除 {{count}} 個後台用戶嗎？此操作無法撤銷。",
+    "deleteConfirm": "確定要刪除後台用戶「{{name}}」嗎？此操作無法撤銷。",
+    "deleteConfirmTitle": "刪除後台用戶",
+    "deleting": "正在刪除後台用戶...",
+    "filter": {
+      "email": "郵箱",
+      "emailPlaceholder": "搜索郵箱",
+      "phone": "手機號",
+      "phonePlaceholder": "搜索手機號",
+      "uid": "UID",
+      "uidPlaceholder": "搜索UID"
+    },
+    "freezeSuccess": "用戶凍結成功",
+    "freezingUser": "正在凍結用戶...",
+    "modal": {
+      "addTitle": "新增後台用戶",
+      "editTitle": "編輯後台用戶",
+      "email": "郵箱",
+      "emailPlaceholder": "請輸入郵箱",
+      "name": "用戶名",
+      "namePlaceholder": "請輸入用戶名",
+      "nickname": "暱稱",
+      "nicknamePlaceholder": "請輸入暱稱",
+      "password": "密碼",
+      "passwordHint": "密碼必須至少8個字符，包含大寫字母、小寫字母和數字",
+      "passwordPlaceholder": "請輸入密碼",
+      "remark": "備註",
+      "remarkPlaceholder": "請輸入備註",
+      "role": "角色",
+      "selectRole": "請選擇角色",
+      "status": "狀態",
+      "statusInvalid": "禁用",
+      "statusNormal": "正常",
+      "validation": {
+        "emailDuplicate": "此郵箱已被使用",
+        "emailRequired": "請輸入郵箱",
+        "nameRequired": "請輸入用戶名",
+        "nicknameRequired": "請輸入暱稱",
+        "passwordRequired": "請輸入密碼",
+        "passwordRequirements": "密碼必須至少8個字符，包含大寫字母、小寫字母和數字",
+        "roleRequired": "請至少選擇一個角色"
+      }
+    },
+    "table": {
+      "createdTime": "創建時間",
+      "loginInfo": "登錄信息",
+      "nickname": "暱稱",
+      "role": "角色",
+      "status": "狀態",
+      "uid": "UID"
+    },
+    "unfreezeSuccess": "用戶解凍成功",
+    "unfreezingUser": "正在解凍用戶...",
+    "updateStatusFailed": "更新用戶狀態失敗",
+    "updating": "正在更新後台用戶..."
+  },
+  "auth": {
+    "errors": {
+      "accountLocked": "帳戶已鎖定",
+      "accountNotVerified": "帳戶未驗證",
+      "emailAlreadyExists": "電子郵件已存在",
+      "emailNotVerified": "電子郵件未驗證",
+      "invalidCredentials": "電子郵件或密碼錯誤",
+      "invalidEmail": "電子郵件格式錯誤",
+      "invalidOtp": "驗證碼錯誤",
+      "invalidPassword": "密碼錯誤",
+      "invalidToken": "無效的令牌",
+      "invalidTwoFactorCode": "兩步驗證碼錯誤",
+      "otpExpired": "驗證碼已過期",
+      "otpNotFound": "找不到驗證碼",
+      "sessionExpired": "會話已過期，請重新登入",
+      "sessionNotFound": "找不到會話",
+      "tokenExpired": "令牌已過期",
+      "tokenNotFound": "找不到令牌",
+      "tooManyRequests": "請求次數過多，請稍後再試",
+      "twoFactorAlreadyEnabled": "已啟用兩步驗證",
+      "twoFactorNotEnabled": "未啟用兩步驗證",
+      "twoFactorRequired": "需要兩步驗證",
+      "unauthorized": "未授權訪問",
+      "unknown": "發生未預期的錯誤",
+      "userNotFound": "找不到用戶",
+      "weakPassword": "密碼強度不足"
+    },
+    "signInSuccess": "登入成功"
+  },
+  "bannerManagement": {
+    "actions": {
+      "add": "新增",
+      "delete": "刪除",
+      "edit": "編輯"
+    },
+    "deleteConfirmation": {
+      "confirm": "刪除",
+      "deleting": "正在刪除 Banner...",
+      "failed": "刪除 Banner 失敗",
+      "message": "確定要刪除此 Banner 嗎？此操作無法撤銷。",
+      "success": "Banner 刪除成功",
+      "title": "刪除 Banner"
+    },
+    "filter": {
+      "createdTime": "創建時間",
+      "uid": "編號",
+      "uidPlaceholder": "搜索編號"
+    },
+    "modal": {
+      "addTitle": "新增 Banner",
+      "clickToUpload": "點擊上傳",
+      "createFailed": "創建 Banner 失敗",
+      "createSuccess": "Banner 創建成功",
+      "creating": "正在創建 Banner...",
+      "editTitle": "編輯 Banner",
+      "errors": {
+        "imageRequired": "請上傳 Banner 圖片",
+        "imageSizeExceeded": "文件大小不能超過 10MB",
+        "invalidImageFormat": "僅支持 PNG/JPG/JPEG 格式",
+        "invalidSort": "請輸入有效數字（0-999999）",
+        "uploadFailed": "圖片上傳失敗"
+      },
+      "fields": {
+        "imageUpload": "圖片上傳",
+        "jumpMatch": "跳轉比賽UIDs",
+        "sortOrder": "排序",
+        "status": "狀態"
+      },
+      "hints": {
+        "imageUpload": "支持PNG/JPG/JPEG格式，文件大小不超過10MB"
+      },
+      "placeholders": {
+        "jumpMatch": "請輸入跳轉比賽的UID，多個用,隔開",
+        "sortOrder": "請輸入數字，數字越小越靠前"
+      },
+      "statusOptions": {
+        "active": "上架",
+        "inactive": "下架"
+      },
+      "updateFailed": "更新 Banner 失敗",
+      "updateSuccess": "Banner 更新成功",
+      "updating": "正在更新 Banner...",
+      "uploadSuccess": "圖片上傳成功",
+      "uploading": "上傳中..."
+    },
+    "status": {
+      "active": "啟用",
+      "disableFailed": "停用 Banner 失敗",
+      "disableSuccess": "Banner 停用成功",
+      "enableFailed": "啟用 Banner 失敗",
+      "enableSuccess": "Banner 啟用成功",
+      "inactive": "停用"
+    },
+    "table": {
+      "createdAt": "創建時間",
+      "image": "圖片",
+      "sort": "排序",
+      "status": "狀態",
+      "uid": "編號"
+    }
+  },
+  "betRecords": {
+    "filter": {
+      "all": "全部",
+      "createdTime": "創建時間",
+      "loginInfo": "登錄信息",
+      "loginInfoPlaceholder": "搜索郵箱/手機號",
+      "marketType": "投注盤口",
+      "marketTypePlaceholder": "選擇盤口",
+      "orderNo": "單號",
+      "orderNoPlaceholder": "搜索單號",
+      "playType": "玩法",
+      "playTypePlaceholder": "選擇玩法",
+      "sportType": "競技類型",
+      "sportTypePlaceholder": "選擇競技類型",
+      "uid": "UID",
+      "uidPlaceholder": "搜索UID"
+    },
+    "marketType": {
+      "european": "歐洲盤",
+      "hongkong": "香港盤",
+      "indonesian": "印尼盤",
+      "malay": "馬來盤"
+    },
+    "matchStatus": {
+      "cancelled": "已取消",
+      "finished": "已結束",
+      "ongoing": "進行中"
+    },
+    "modal": {
+      "betAmount": "投注金額",
+      "betForm": "投注形式",
+      "betOption": "投注選項",
+      "betScore": "下注比分",
+      "betTime": "投注時刻",
+      "betType": "投注類型",
+      "createdAt": "創建時間",
+      "leagueTeams": "聯賽隊伍",
+      "loginInfo": "登錄信息",
+      "marketType": "投注盤口",
+      "matchId": "比賽ID",
+      "matchName": "比賽名稱",
+      "matchResult": "比賽結果",
+      "matchStatus": "比賽狀態",
+      "matchTime": "開賽時間",
+      "nickname": "昵稱",
+      "odds": "投注賠率",
+      "orderNo": "單號",
+      "orderStatus": "訂單狀態",
+      "orderTypeId": "訂單類型ID",
+      "playType": "玩法",
+      "profit": "最終收益",
+      "regionId": "區域ID",
+      "settledAt": "結算時間",
+      "settlementMethod": "結算方式",
+      "sportType": "競技類型",
+      "title": "投注詳情",
+      "uid": "UID"
+    },
+    "orderStatus": {
+      "cancelled": "已取消",
+      "settled": "已結算",
+      "unsettled": "未結算"
+    },
+    "playType": {
+      "1x2": "1x2",
+      "correctScore": "波膽",
+      "handicap": "讓分"
+    },
+    "regionName": {
+      "europe": "歐洲"
+    },
+    "settlementMethod": {
+      "auto": "自動",
+      "manual": "手動"
+    },
+    "sportType": {
+      "basketball": "籃球",
+      "soccer": "足球"
+    },
+    "table": {
+      "actions": "操作",
+      "betAmount": "投注金額（USDT）",
+      "createdAt": "創建時間",
+      "loginInfo": "登錄信息",
+      "marketType": "投注盤口",
+      "matchId": "比賽ID",
+      "matchName": "比賽名稱",
+      "matchStatus": "比賽狀態",
+      "odds": "賠率（歐洲賠率）",
+      "oddsType": "盤口",
+      "orderNo": "單號",
+      "orderStatus": "訂單狀態",
+      "orderTypeId": "訂單類型ID",
+      "playType": "玩法",
+      "profit": "收益（USDT）",
+      "regionId": "區域ID",
+      "settledAt": "結算時間",
+      "settlementMethod": "結算方式",
+      "sportType": "競技類型",
+      "uid": "UID"
+    }
+  },
+  "cancelOrder": {
+    "batchCancel": "批量劃單",
+    "cancelAll": "全部劃單",
+    "cancelOrder": "劃單",
+    "confirmBatchCancelMessage": "確定要對 {{count}} 條規則進行劃單嗎？此操作不可撤銷。",
+    "confirmBatchCancelTitle": "確認批量劃單",
+    "confirmCancelAllMessage": "確定要對所有訂單進行劃單嗎？這是危險操作，不可撤銷。",
+    "confirmCancelAllTitle": "確認全部劃單",
+    "confirmCancelMessage": "確定要劃單嗎？此操作不可撤銷。",
+    "confirmCancelTitle": "確認劃單",
+    "confirmDeleteMessage": "確定要刪除此規則嗎？此操作不可撤銷。",
+    "confirmDeleteTitle": "確認刪除",
+    "create": "創建",
+    "failedReasons": "失敗原因",
+    "filter": {
+      "awayTeam": "客隊",
+      "awayTeamPlaceholder": "搜索客隊",
+      "homeTeam": "主隊",
+      "homeTeamPlaceholder": "搜索主隊",
+      "loginInfo": "登錄信息",
+      "loginInfoPlaceholder": "搜索郵箱/手機號",
+      "matchId": "比賽ID",
+      "matchIdPlaceholder": "輸入比賽ID",
+      "matchStatus": "比賽狀態",
+      "orderUid": "訂單UID",
+      "orderUidPlaceholder": "輸入訂單UID",
+      "sportType": "競技類型",
+      "tournament": "聯賽",
+      "tournamentPlaceholder": "搜索聯賽",
+      "uid": "UID",
+      "uidPlaceholder": "輸入UID"
+    },
+    "matchRules": {
+      "batchCancelFailed": "批量劃單失敗",
+      "batchCancelSuccess": "批量劃單成功",
+      "cancelAllFailed": "全部劃單失敗",
+      "cancelAllSuccess": "全部劃單成功",
+      "cancelFailed": "劃單失敗",
+      "cancelSuccess": "劃單成功",
+      "createFailed": "賽事規則創建失敗",
+      "createSuccess": "賽事規則創建成功",
+      "deleteFailed": "規則刪除失敗",
+      "deleteSuccess": "規則刪除成功",
+      "fetchFailed": "獲取賽事規則失敗"
+    },
+    "matchSelect": {
+      "fetchFailed": "獲取比賽列表失敗",
+      "leaveEmptyForAll": "不選擇則劃單所有玩法",
+      "noMatchSelected": "請選擇一場比賽",
+      "selectMarkets": "選擇玩法",
+      "title": "選擇比賽"
+    },
+    "orderRules": {
+      "batchCancelFailed": "批量劃單失敗",
+      "batchCancelSuccess": "批量劃單成功",
+      "cancelAllFailed": "全部劃單失敗",
+      "cancelAllSuccess": "全部劃單成功",
+      "cancelFailed": "劃單失敗",
+      "cancelSuccess": "劃單成功",
+      "createFailed": "訂單規則創建失敗",
+      "createSuccess": "訂單規則創建成功",
+      "deleteFailed": "規則刪除失敗",
+      "deleteSuccess": "規則刪除成功",
+      "fetchFailed": "獲取訂單規則失敗"
+    },
+    "orderSelect": {
+      "fetchFailed": "獲取訂單列表失敗",
+      "noOrderSelected": "請選擇一個訂單",
+      "title": "選擇訂單"
+    },
+    "selectAll": "全選",
+    "selectedCount": "已選擇 {{count}} 項",
+    "table": {
+      "awayTeam": "客隊",
+      "betAmount": "投注金額",
+      "canceledAt": "劃單時間",
+      "createdAt": "創建時間",
+      "homeTeam": "主隊",
+      "loginInfo": "登錄信息",
+      "matchId": "比賽ID",
+      "matchStatus": "比賽狀態",
+      "matchTime": "比賽時間",
+      "orderStatus": "訂單狀態",
+      "orderUid": "訂單UID",
+      "ruleId": "規則ID",
+      "score": "比分",
+      "market": "劃單投注類別",
+      "sportType": "競技類型",
+      "tournament": "聯賽",
+      "uid": "UID"
+    },
+    "tabs": {
+      "matchRules": "賽事規則",
+      "orderRules": "訂單規則"
+    }
+  },
+  "common": {
+    "action": "操作",
+    "all": "全部",
+    "cancel": "取消",
+    "confirm": "確認",
+    "copy": "複製",
+    "copyFailed": "複製失敗",
+    "createFailed": "創建失敗",
+    "createSuccess": "創建成功",
+    "delete": "刪除",
+    "deleteFailed": "刪除失敗",
+    "deleteSuccess": "刪除成功",
+    "endDateMustNotBePast": "結束日期不能是過去的日期",
+    "go": "前往",
+    "goToPage": "前往頁面",
+    "loadFailed": "載入資料失敗",
+    "loading": "載入中...",
+    "next": "下一頁",
+    "noData": "暫無數據",
+    "noItemsSelected": "未選擇任何項目",
+    "prev": "上一頁",
+    "reset": "重置",
+    "rowsPerPage": "每頁顯示",
+    "search": "搜索",
+    "selectDate": "選擇日期",
+    "showing": "顯示 {{start}} - {{end}} 共 {{total}} 筆",
+    "timeMustBeInFuture": "時間必須在未來",
+    "updateFailed": "更新失敗",
+    "updateSuccess": "更新成功",
+    "uploadFailed": "上傳失敗",
+    "uploadSuccess": "上傳成功",
+    "uploading": "上傳中...",
+    "viewDetails": "查看詳情",
+    "welcomeToBestxx": "歡迎來到 Bestxx"
+  },
+  "dashboard": {
+    "timeRange": {
+      "last30days": "過去30天",
+      "last7days": "過去7天",
+      "lastMonth": "上月",
+      "selectDateRange": "選擇日期範圍",
+      "thisMonth": "本月",
+      "today": "今天",
+      "yesterday": "昨天"
+    }
+  },
+  "depositRecords": {
+    "actions": {
+      "delete": "刪除"
+    },
+    "deleteConfirmation": {
+      "confirm": "刪除",
+      "deleting": "正在刪除充值記錄...",
+      "failed": "刪除充值記錄失敗",
+      "message": "確定要刪除此充值記錄嗎？此操作無法撤銷。",
+      "success": "充值記錄刪除成功",
+      "title": "刪除充值記錄"
+    },
+    "filter": {
+      "createdTime": "創建時間",
+      "nickname": "昵稱",
+      "nicknamePlaceholder": "搜索昵稱",
+      "orderNo": "單號",
+      "orderNoPlaceholder": "搜索單號",
+      "uid": "UID",
+      "uidPlaceholder": "搜索UID"
+    },
+    "status": {
+      "confirmed": "已確認",
+      "pending": "待處理",
+      "timeout": "超時"
+    },
+    "table": {
+      "chainNetwork": "鏈網絡",
+      "createdAt": "創建時間",
+      "depositAmount": "充值金額",
+      "nickname": "昵稱",
+      "orderNo": "單號",
+      "receiverAddress": "接收地址",
+      "senderAddress": "發送地址",
+      "status": "狀態",
+      "uid": "UID"
+    }
+  },
+  "financeStatistics": {
+    "actualProfitLoss": "實際盈虧",
+    "betAmount": "下注金額",
+    "cumulativeData": "累計數據",
+    "dataAnalysis": {
+      "last7Days": "近7日",
+      "time": "時間",
+      "title": "數據分析",
+      "todayBetAmount": "今日下注金額",
+      "todayPlatformRevenue": "今日平台收益",
+      "todayRebateAmount": "今日返水金額",
+      "todayUserProfitLoss": "今日用戶盈虧",
+      "todayWithdrawalFee": "今日提現手續費"
+    },
+    "rebateAmount": "返水金額",
+    "table": {
+      "time": "時間",
+      "todayBetAmount": "今日下注金額(USDT)",
+      "todayProfitLoss": "今日實際盈虧(USDT)",
+      "todayRebateAmount": "今日返水金額(USDT)",
+      "totalBetAmount": "總下注金額(USDT)",
+      "totalProfitLoss": "總實際盈虧(USDT)",
+      "totalRebateAmount": "總返水金額(USDT)"
+    },
+    "todayNewData": "今日新增數據",
+    "tooltips": {
+      "actualProfitLoss": "實際盈虧 = 下注金額 - 派彩金額",
+      "totalRevenue": "綜合收益 = 實際盈虧 + 提現手續費"
+    },
+    "totalActualProfitLoss": "總實際盈虧",
+    "totalBetAmount": "總下注金額",
+    "totalRebateAmount": "總返水金額",
+    "totalRevenue": "綜合收益",
+    "totalTotalRevenue": "總綜合收益",
+    "totalWithdrawalFee": "總提現手續費",
+    "usdt": "USDT",
+    "withdrawalFee": "提現手續費"
+  },
+  "global": {
+    "back": "返回",
+    "cancel": "取消",
+    "close": "關閉",
+    "confirm": "確認",
+    "copiedToClipboard": "已複製: {{text}}",
+    "mobile_warning": "我們的應用程序不支持移動設備。",
+    "notUsed": "未啟用",
+    "pageNotFound": "找不到頁面",
+    "permissionDenied": "權限被拒絕",
+    "signOut": "登出"
+  },
+  "infoPortal": {
+    "announcements": {
+      "actions": {
+        "add": "新增",
+        "delete": "刪除",
+        "edit": "編輯",
+        "viewDetails": "詳情"
+      },
+      "batchDeleteConfirmation": {
+        "confirm": "刪除",
+        "deleting": "正在刪除公告...",
+        "failed": "批量刪除公告失敗",
+        "message": "確定要刪除 {{count}} 條公告嗎？此操作無法撤銷。",
+        "success": "公告批量刪除成功",
+        "title": "批量刪除公告"
+      },
+      "deleteConfirmation": {
+        "confirm": "刪除",
+        "deleting": "正在刪除公告...",
+        "failed": "刪除公告失敗",
+        "message": "確定要刪除此公告嗎？此操作無法撤銷。",
+        "success": "公告已刪除",
+        "title": "刪除公告"
+      },
+      "filter": {
+        "createdTime": "創建時間",
+        "publishTime": "發布時間",
+        "status": "狀態",
+        "statusAll": "全部"
+      },
+      "modal": {
+        "addTitle": "新增公告",
+        "contentLabel": "內容",
+        "contentPlaceholder": "請輸入公告內容",
+        "contentRequired": "內容（所有語言）",
+        "createFailed": "新增公告失敗",
+        "createSuccess": "公告新增成功",
+        "creating": "正在新增公告...",
+        "editTitle": "編輯公告",
+        "fieldsNotFilled": "請填寫: {{fields}}",
+        "language": "語言",
+        "publishTimeLabel": "發布時間",
+        "publishTimeRequired": "發布時間",
+        "statusLabel": "狀態",
+        "titleLabel": "標題",
+        "titlePlaceholder": "請輸入公告標題",
+        "titleRequired": "標題（所有語言）",
+        "updateFailed": "更新公告失敗",
+        "updateSuccess": "公告更新成功",
+        "updating": "正在更新公告...",
+        "viewTitle": "查看公告"
+      },
+      "status": {
+        "disableFailed": "下線公告失敗",
+        "disableSuccess": "公告已下線",
+        "enableFailed": "上線公告失敗",
+        "enableSuccess": "公告已上線",
+        "offline": "下線",
+        "online": "上線"
+      },
+      "table": {
+        "content": "公告內容",
+        "createdTime": "創建時間",
+        "publishTime": "發布時間",
+        "status": "狀態",
+        "title": "公告標題"
+      }
+    },
+    "gameRules": {
+      "actions": {
+        "add": "新增",
+        "delete": "刪除",
+        "edit": "編輯",
+        "viewDetails": "詳情"
+      },
+      "batchDeleteModal": {
+        "confirm": "刪除",
+        "message": "確定要刪除 {{count}} 條遊戲規則嗎？此操作無法撤銷。",
+        "title": "批量刪除遊戲規則"
+      },
+      "category": {
+        "basketball_rules": "籃球規則",
+        "general_rules": "一般規則",
+        "live_betting_rules": "滾球規則",
+        "soccer_rules": "足球規則"
+      },
+      "createFailed": "遊戲規則創建失敗",
+      "createSuccess": "遊戲規則創建成功",
+      "deleteFailed": "遊戲規則刪除失敗",
+      "deleteModal": {
+        "confirm": "刪除",
+        "message": "確定要刪除此遊戲規則嗎？此操作無法撤銷。",
+        "title": "刪除遊戲規則"
+      },
+      "deleteSuccess": "遊戲規則刪除成功",
+      "filter": {
+        "createdTime": "創建時間",
+        "status": "狀態",
+        "statusAll": "全部",
+        "type": "類型",
+        "typeAll": "全部",
+        "uid": "編號",
+        "uidPlaceholder": "搜索編號"
+      },
+      "modal": {
+        "addTitle": "新增遊戲規則",
+        "categoryLabel": "類型",
+        "categoryPlaceholder": "請選擇類型",
+        "contentLabel": "內容",
+        "contentPlaceholder": "請輸入內容",
+        "contentRequired": "所有語言的內容",
+        "editTitle": "編輯遊戲規則",
+        "fieldsNotFilled": "請填寫：{{fields}}",
+        "language": "語言",
+        "statusLabel": "狀態",
+        "titleLabel": "標題",
+        "titlePlaceholder": "請輸入標題",
+        "titleRequired": "所有語言的標題",
+        "viewTitle": "遊戲規則詳情"
+      },
+      "status": {
+        "offline": "下線",
+        "online": "上線"
+      },
+      "table": {
+        "content": "內容",
+        "createdTime": "創建時間",
+        "sort": "排序",
+        "status": "狀態",
+        "title": "標題",
+        "type": "類型"
+      },
+      "updateFailed": "遊戲規則更新失敗",
+      "updateSuccess": "遊戲規則更新成功"
+    },
+    "helpCenter": {
+      "actions": {
+        "add": "新增",
+        "delete": "刪除",
+        "edit": "編輯",
+        "viewDetails": "詳情"
+      },
+      "batchDeleteModal": {
+        "confirm": "刪除",
+        "message": "確定要刪除 {{count}} 條常見問題嗎？此操作無法撤銷。",
+        "title": "批量刪除常見問題"
+      },
+      "createFailed": "新增常見問題失敗",
+      "createSuccess": "常見問題新增成功",
+      "deleteFailed": "刪除常見問題失敗",
+      "deleteModal": {
+        "confirm": "刪除",
+        "message": "確定要刪除此常見問題嗎？此操作無法撤銷。",
+        "title": "刪除常見問題"
+      },
+      "deleteSuccess": "常見問題刪除成功",
+      "filter": {
+        "createdTime": "創建時間",
+        "status": "狀態",
+        "statusAll": "全部"
+      },
+      "modal": {
+        "addTitle": "新增常見問題",
+        "answerLabel": "答案",
+        "answerPlaceholder": "請輸入答案",
+        "answerRequired": "答案（所有語言）",
+        "categoryLabel": "分類",
+        "editTitle": "編輯常見問題",
+        "fieldsNotFilled": "請填寫: {{fields}}",
+        "language": "語言",
+        "questionLabel": "問題",
+        "questionPlaceholder": "請輸入問題",
+        "questionRequired": "問題（所有語言）",
+        "statusLabel": "狀態",
+        "viewTitle": "查看常見問題"
+      },
+      "status": {
+        "offline": "下線",
+        "online": "上線"
+      },
+      "table": {
+        "answer": "答案",
+        "createdTime": "創建時間",
+        "question": "問題",
+        "status": "狀態"
+      },
+      "updateFailed": "更新常見問題失敗",
+      "updateSuccess": "常見問題更新成功"
+    },
+    "tabs": {
+      "announcements": "系統公告",
+      "gameRules": "遊戲規則",
+      "helpCenter": "幫助中心"
+    }
+  },
+  "loginLogs": {
+    "filter": {
+      "loginAddress": "登陸地址",
+      "loginAddressPlaceholder": "請輸入登陸地址",
+      "loginTime": "登陸時間",
+      "status": "狀態",
+      "statusAll": "全部",
+      "statusFailure": "失敗",
+      "statusSuccess": "成功",
+      "username": "用戶名稱",
+      "usernamePlaceholder": "請輸入用戶名稱"
+    },
+    "status": {
+      "failure": "失敗",
+      "success": "成功"
+    },
+    "table": {
+      "accessId": "訪問編號",
+      "browser": "瀏覽器",
+      "loginAddress": "登錄地址",
+      "loginLocation": "登陸地點",
+      "loginStatus": "登陸狀態",
+      "loginTime": "登陸日期",
+      "message": "操作信息",
+      "os": "操作系統",
+      "username": "用戶名稱"
+    }
+  },
+  "matchList": {
+    "actions": {
+      "export": "導出"
+    },
+    "exportFailed": "導出失敗",
+    "exportSuccess": "導出成功",
+    "filter": {
+      "awayTeam": "客隊名稱",
+      "awayTeamPlaceholder": "搜索客隊名稱",
+      "country": "國家",
+      "countryPlaceholder": "搜索國家",
+      "homeTeam": "主隊名稱",
+      "homeTeamPlaceholder": "搜索主隊名稱",
+      "league": "所屬聯賽",
+      "leaguePlaceholder": "搜索聯賽",
+      "matchId": "比賽ID",
+      "matchIdPlaceholder": "搜索比賽ID",
+      "matchTime": "開賽時間"
+    },
+    "status": {
+      "cancelled": "取消",
+      "ended": "已結束",
+      "fullTime": "全場",
+      "halfTime": "半場",
+      "notStarted": "未開始"
+    },
+    "table": {
+      "awayTeam": "客隊名稱",
+      "betAmount": "下注金額",
+      "betUserCount": "下注人數",
+      "country": "國家",
+      "fullCorner": "全場角球",
+      "fullRedCard": "全場紅牌",
+      "fullScore": "全場比分",
+      "fullYellowCard": "全場黃牌",
+      "halfCorner": "半場角球",
+      "halfRedCard": "半場紅牌",
+      "halfScore": "半場比分",
+      "halfYellowCard": "半場黃牌",
+      "homeTeam": "主隊名稱",
+      "league": "所屬聯賽",
+      "matchId": "比賽ID",
+      "matchTime": "開賽時間",
+      "status": "比賽狀態"
+    }
+  },
+  "matchResultList": {
+    "actions": {
+      "export": "導出"
+    },
+    "exportFailed": "導出失敗",
+    "exportSuccess": "導出成功",
+    "filter": {
+      "awayTeam": "客隊名稱",
+      "awayTeamPlaceholder": "搜索客隊名稱",
+      "country": "國家/地區",
+      "countryPlaceholder": "搜索國家/地區",
+      "homeTeam": "主隊名稱",
+      "homeTeamPlaceholder": "搜索主隊名稱",
+      "league": "所屬聯賽",
+      "leaguePlaceholder": "搜索聯賽",
+      "matchId": "比賽ID",
+      "matchIdPlaceholder": "搜索比賽ID",
+      "matchTime": "開賽時間"
+    },
+    "table": {
+      "awayTeam": "客隊名稱",
+      "betAmount": "下注金額",
+      "betUserCount": "下注人數",
+      "country": "國家/地區",
+      "endTime": "結束時間",
+      "fullCorner": "全場角球",
+      "fullRedCard": "全場紅牌",
+      "fullScore": "全場比分",
+      "fullYellowCard": "全場黃牌",
+      "halfCorner": "半場角球",
+      "halfRedCard": "半場紅牌",
+      "halfScore": "半場比分",
+      "halfYellowCard": "半場黃牌",
+      "homeTeam": "主隊名稱",
+      "league": "所屬聯賽",
+      "matchTime": "開賽時間",
+      "uid": "UID"
+    }
+  },
+  "operationLogs": {
+    "actions": {
+      "viewDetails": "詳細"
+    },
+    "detailModal": {
+      "browser": "瀏覽器",
+      "country": "國家",
+      "duration": "耗時",
+      "ipAddress": "IP 地址",
+      "logId": "日誌編號",
+      "method": "請求方式",
+      "operationTime": "操作時間",
+      "os": "操作系統",
+      "path": "請求路徑",
+      "permission": "權限",
+      "result": "結果",
+      "statusCode": "狀態碼",
+      "title": "日誌詳細",
+      "userAgent": "用戶代理",
+      "userEmail": "用戶郵箱",
+      "userName": "用戶名稱"
+    },
+    "filter": {
+      "ipAddress": "IP 地址",
+      "ipAddressPlaceholder": "請輸入 IP 地址",
+      "method": "請求方式",
+      "methodAll": "全部",
+      "operationTime": "操作時間",
+      "result": "結果",
+      "resultAll": "全部",
+      "resultFailure": "失敗",
+      "resultSuccess": "成功",
+      "userName": "用戶名稱",
+      "userNamePlaceholder": "請輸入用戶名稱"
+    },
+    "status": {
+      "failure": "失敗",
+      "success": "成功"
+    },
+    "table": {
+      "country": "國家",
+      "duration": "耗時",
+      "durationUnit": "毫秒",
+      "ipAddress": "IP 地址",
+      "method": "請求方式",
+      "operationTime": "操作時間",
+      "path": "請求路徑",
+      "permission": "權限",
+      "result": "結果",
+      "userName": "用戶名稱"
+    }
+  },
+  "parameterConfig": {
+    "commissionAndLimits": "佣金與限制",
+    "confirmUpdate": "確認更新",
+    "dailyOrderQueryLimit": "每日查詢他人訂單次數上限",
+    "depositSettings": "存款設定",
+    "maximumOrderAmount": "最高訂單金額",
+    "maximumPayout": "最高派彩金額",
+    "maximumWithdrawal": "最高提款金額",
+    "minimumDeposit": "最低存款金額",
+    "minimumOrderAmount": "最低訂單金額",
+    "minimumWithdrawal": "最低提款金額",
+    "orderSettings": "訂單設定",
+    "save": "保存",
+    "saving": "保存中...",
+    "teamCommissionRate": "團隊訂單佣金率",
+    "timesPerDay": "次/日",
+    "validation": {
+      "invalidNumber": "請輸入有效的數字",
+      "maxValue": "數值不能大於 {{max}}",
+      "minValue": "數值不能小於 {{min}}",
+      "pleaseFixErrors": "請先修正錯誤再保存",
+      "required": "此欄位為必填"
+    },
+    "withdrawalFeeRate": "提款手續費率",
+    "withdrawalReviewThreshold": "提款審核門檻",
+    "withdrawalSettings": "提款設定"
+  },
+  "pointsExchange": {
+    "filter": {
+      "createdTime": "創建時間",
+      "loginInfo": "登錄信息",
+      "loginInfoPlaceholder": "輸入郵箱, 手機號",
+      "orderNo": "單號",
+      "orderNoPlaceholder": "請輸入單號",
+      "uid": "UID",
+      "uidPlaceholder": "請輸入 UID"
+    },
+    "table": {
+      "createdAt": "創建時間",
+      "loginInfo": "登錄信息",
+      "orderNo": "單號",
+      "pointsAfter": "變化後積分",
+      "pointsBefore": "變化前積分",
+      "pointsExchange": "積分兌換",
+      "uid": "UID",
+      "vipLevel": "VIP 等級"
+    }
+  },
+  "profile": {
+    "backupCodes": "備份代碼",
+    "backupCodesDescription": "將這些代碼保存在安全的地方。每個代碼只能使用一次。",
+    "backupCodesGenerated": "備份代碼已下載",
+    "copySetupKey": "複製設定金鑰",
+    "disable2FA": "停用雙重驗證",
+    "disable2FAConfirm": "確定要停用雙重驗證嗎？這將降低您帳戶的安全性。",
+    "disable2FASuccess": "雙重驗證已停用",
+    "disabling2FA": "停用中...",
+    "email": "電子郵件",
+    "enable2FA": "啟用雙重驗證",
+    "enable2FASuccess": "雙重驗證啟用成功",
+    "enabling2FA": "啟用中...",
+    "enterPassword": "輸入您的密碼",
+    "enterPasswordToEnable": "輸入密碼以啟用雙重驗證",
+    "name": "姓名",
+    "password": "密碼",
+    "passwordRequired": "密碼為必填",
+    "pleaseEnable2FA": "請啟用雙重驗證以使用其他功能",
+    "profile": "個人資料",
+    "profileSubtitle": "管理您的個人資訊",
+    "saveToFile": "保存到文件",
+    "scanQRCode": "掃描 QR 碼",
+    "twoFactorAuth": "雙重驗證",
+    "twoFactorAuthDescription": "為您的帳戶添加額外的安全層",
+    "twoFactorEnabled": "雙重驗證已啟用",
+    "userId": "用戶 ID",
+    "verificationCode": "驗證碼",
+    "verificationCodeRequired": "驗證碼為必填",
+    "verifyCode": "驗證代碼",
+    "verifying": "驗證中..."
+  },
+  "rebateRecords": {
+    "filter": {
+      "createdTime": "創建時間",
+      "inviterUid": "邀請人UID",
+      "inviterUidPlaceholder": "輸入邀請人UID",
+      "orderUid": "訂單UID",
+      "orderUidPlaceholder": "輸入訂單UID",
+      "rebateRecordUid": "返水記錄UID",
+      "rebateRecordUidPlaceholder": "輸入UID",
+      "sportType": "競技類型",
+      "sportTypeAll": "全部",
+      "sportTypePlaceholder": "選擇競技類型",
+      "userLoginInfo": "用戶登錄信息",
+      "userLoginInfoPlaceholder": "輸入郵箱/手機號",
+      "userUid": "用戶UID",
+      "userUidPlaceholder": "輸入用戶UID"
+    },
+    "sportType": {
+      "basketball": "籃球",
+      "soccer": "足球"
+    },
+    "table": {
+      "areaType": "區域類型",
+      "betAmount": "投注金額",
+      "commissionAmount": "佣金金額（USDT）",
+      "commissionRate": "佣金比例",
+      "createdAt": "創建時間",
+      "inviterLoginInfo": "邀請人登錄信息",
+      "inviterUid": "邀請人UID",
+      "matchId": "比賽ID",
+      "orderUid": "訂單UID",
+      "outcomeValue": "結果值",
+      "profit": "收益（USDT）",
+      "rebateRecordUid": "返水記錄UID",
+      "sportType": "競技類型",
+      "tournamentName": "賽事名稱",
+      "userLoginInfo": "用戶登錄信息",
+      "userUid": "用戶UID"
+    }
+  },
+  "role": {
+    "add": "新增",
+    "batchDeleteConfirm": "確定要刪除 {{count}} 個角色嗎？此操作無法撤銷。",
+    "createRole": "新增角色",
+    "createdTime": "創建時間",
+    "delete": "刪除",
+    "deleteConfirm": "確定要刪除此角色嗎？",
+    "deleteConfirmTitle": "刪除角色",
+    "edit": "編輯",
+    "editRole": "編輯角色",
+    "namePlaceholder": "請輸入角色名稱",
+    "permissionAssignment": "權限分配",
+    "roleName": "角色名稱",
+    "roleNumber": "角色編號",
+    "validation": {
+      "nameRequired": "請輸入所有語言的角色名稱"
+    }
+  },
+  "sidebar": {
+    "account": {
+      "myAccount": "我的帳戶",
+      "title": "帳戶"
+    },
+    "adminUsers": "後台用戶",
+    "announcements": "系統公告",
+    "bannerManagement": "Banner管理",
+    "betRecords": "投注記錄",
+    "cancelOrder": "劃單記錄",
+    "customerService": "客服管理",
+    "depositRecords": "充值記錄",
+    "faq": "常見問題",
+    "financeStatistics": "財務統計",
+    "infoPortal": "信息門戶",
+    "loginLogs": "登錄日誌",
+    "matchList": "賽事列表",
+    "matchManagement": "賽事管理",
+    "matchResultList": "賽果列表",
+    "operationLogs": "操作日誌",
+    "operationManagement": "運營管理",
+    "orderManagement": "訂單管理",
+    "parameterConfig": "參數配置",
+    "pointsExchange": "積分兌換",
+    "rebateRecords": "返水記錄",
+    "roleManagement": "角色管理",
+    "statistics": "數據統計",
+    "systemManagement": "系統管理",
+    "transferRecords": "劃轉記錄",
+    "userList": "用戶列表",
+    "userManagement": "用戶管理",
+    "userStatistics": "用戶統計",
+    "withdrawalOrders": "提現訂單"
+  },
+  "signInSignUp": {
+    "login": {
+      "emailLabel": "電子郵件",
+      "emailPlaceholder": "輸入電子郵件地址",
+      "error": "登入失敗",
+      "forgetPassword": "忘記密碼？",
+      "invalidCredentials": "電子郵件或密碼錯誤",
+      "loginButton": "登入",
+      "passwordLabel": "密碼",
+      "passwordPlaceholder": "輸入密碼",
+      "passwordResetMessage": "請聯繫支援以重置密碼",
+      "signingIn": "登入中...",
+      "success": "登入成功",
+      "title": "登入",
+      "validation": {
+        "email": {
+          "invalid": "無效的電子郵件格式",
+          "required": "電子郵件為必填"
+        },
+        "password": {
+          "lowercase": "密碼必須包含至少一個小寫字母",
+          "minLength": "密碼必須至少 6 個字符",
+          "number": "密碼必須包含至少一個數字",
+          "required": "密碼為必填",
+          "special": "密碼必須包含至少一個特殊字符",
+          "uppercase": "密碼必須包含至少一個大寫字母"
+        }
+      }
+    },
+    "subtitle": "球類管理平台"
+  },
+  "transferRecords": {
+    "actions": {
+      "delete": "刪除"
+    },
+    "filter": {
+      "createdTime": "創建時間",
+      "loginInfo": "登錄信息",
+      "loginInfoPlaceholder": "搜索登錄信息",
+      "orderNo": "訂單號",
+      "orderNoPlaceholder": "搜索訂單號",
+      "type": "類型",
+      "typeAll": "全部",
+      "typePlaceholder": "選擇類型",
+      "uid": "UID",
+      "uidPlaceholder": "搜索UID"
+    },
+    "table": {
+      "amount": "金額",
+      "balanceAfter": "變化後餘額",
+      "balanceBefore": "變化前餘額",
+      "createdAt": "創建時間",
+      "loginInfo": "登錄信息",
+      "orderNo": "訂單號",
+      "status": "狀態",
+      "type": "類型",
+      "uid": "UID"
+    },
+    "type": {
+      "transferIn": "交易所至體育",
+      "transferOut": "體育至交易所"
+    }
+  },
+  "userList": {
+    "actions": {
+      "delete": "刪除",
+      "edit": "編輯",
+      "freeze": "凍結",
+      "unfreeze": "解凍",
+      "updateBalance": "充值/扣減"
+    },
+    "buttons": {
+      "add": "新增",
+      "delete": "刪除",
+      "edit": "編輯",
+      "export": "導出"
+    },
+    "filter": {
+      "createdTime": "創建時間",
+      "loginInfo": "登錄信息",
+      "loginInfoPlaceholder": "搜索郵箱/手機號",
+      "nickname": "暱稱",
+      "nicknamePlaceholder": "搜索暱稱",
+      "parentUid": "上級UID",
+      "parentUidPlaceholder": "搜索上一級UID",
+      "status": "狀態",
+      "statusAll": "全部",
+      "statusPlaceholder": "選擇狀態",
+      "uid": "UID",
+      "uidPlaceholder": "搜索UID"
+    },
+    "loginMethod": {
+      "email": "郵箱",
+      "phone": "手機號"
+    },
+    "modal": {
+      "avatar": "頭像",
+      "editUserTitle": "編輯用戶",
+      "emailPhone": "郵箱 / 手機號",
+      "freezeConfirmation": "確定要凍結用戶 \"{{name}}\" 嗎？",
+      "freezeFailed": "更新用戶狀態失敗",
+      "freezeSuccess": "用戶凍結成功",
+      "freezing": "正在凍結用戶...",
+      "parentUid": "上級UID",
+      "password": "密碼",
+      "passwordHint": "密碼必須至少8個字符，包含大寫字母、小寫字母和數字",
+      "passwordPlaceholder": "輸入新密碼（留空保持原密碼）",
+      "uid": "UID",
+      "unfreezeConfirmation": "確定要解凍用戶 \"{{name}}\" 嗎？",
+      "unfreezeSuccess": "用戶解凍成功",
+      "unfreezing": "正在解凍用戶...",
+      "updateFailed": "用戶更新失敗",
+      "updateSuccess": "用戶更新成功",
+      "updating": "正在更新用戶...",
+      "userLevel": "VIP等級",
+      "username": "顯示名稱",
+      "usernamePlaceholder": "請輸入顯示名稱",
+      "rechargingUser": "充值中...",
+      "deductingUser": "扣減中...",
+      "rechargeSuccess": "充值成功",
+      "rechargeFailed": "充值失敗",
+      "deductionSuccess": "扣減成功",
+      "deductionFailed": "扣減失敗",
+      "invalidNumber": "請輸入正數或則負數",
+      "adjustBalanceLabel": "增加/減少餘額",
+      "amountPlaceholder": "請輸入金額",
+      "amountHint": "正數為增加，負數為減少",
+      "validation": {
+        "fileTooLarge": "文件大小不能超過2MB",
+        "invalidImageFormat": "只允許上傳 JPEG、JPG 和 PNG 格式的圖片",
+        "passwordRequirements": "密碼必須至少8個字符，包含大寫字母、小寫字母和數字",
+        "pleaseFixErrors": "請先修正錯誤再提交",
+        "usernameMaxLength": "用戶名不能超過20個字符"
+      }
+    },
+    "status": {
+      "frozen": "凍結",
+      "normal": "正常"
+    },
+    "table": {
+      "avatar": "頭像",
+      "createdAt": "創建時間",
+      "inviteCode": "邀請碼",
+      "loginInfo": "登錄信息",
+      "loginMethod": "登錄方式",
+      "nickname": "暱稱",
+      "parentUid": "上級UID",
+      "status": "狀態",
+      "subordinateCount": "下級人數",
+      "totalRebate": "累積返水",
+      "uid": "UID",
+      "vipLevel": "VIP等級",
+      "vipPoints": "VIP積分",
+      "walletBalance": "錢包餘額"
+    }
+  },
+  "userStatistics": {
+    "cumulativeData": "累計數據",
+    "dataAnalysis": {
+      "last7Days": "近7日",
+      "time": "時間",
+      "title": "數據分析",
+      "todayDeposit": "今日充值",
+      "todayRegistration": "今日註冊數",
+      "todayWithdrawal": "今日提現"
+    },
+    "newDeposit": "新增充值",
+    "newRegistration": "新增註冊",
+    "newWithdrawal": "新增提現",
+    "person": "人",
+    "table": {
+      "time": "時間",
+      "todayNewDeposit": "今日新增充值(USDT)",
+      "todayNewRegistration": "今日新增註冊(人)",
+      "todayNewWithdrawal": "今日新增提現(USDT)",
+      "totalDeposit": "總充值(USDT)",
+      "totalUsers": "用戶總人數(人)",
+      "totalWithdrawal": "總提現(USDT)"
+    },
+    "todayData": "今日新增數據",
+    "totalDeposit": "總充值",
+    "totalUsers": "用戶總數",
+    "totalWithdrawal": "總提現",
+    "usdt": "USDT"
+  },
+  "withdrawalOrders": {
+    "actions": {
+      "approve": "通過",
+      "delete": "刪除",
+      "reject": "拒絕"
+    },
+    "approveConfirmation": {
+      "approving": "正在處理通過...",
+      "confirm": "通過",
+      "failed": "通過提現失敗",
+      "message": "確定要通過此提現申請嗎？",
+      "success": "提現已通過",
+      "title": "通過提現"
+    },
+    "deleteConfirmation": {
+      "confirm": "刪除",
+      "deleting": "正在刪除提現訂單...",
+      "failed": "刪除提現訂單失敗",
+      "message": "確定要刪除此提現訂單嗎？此操作無法撤銷。",
+      "success": "提現訂單刪除成功",
+      "title": "刪除提現訂單"
+    },
+    "filter": {
+      "createdTime": "創建時間",
+      "nickname": "昵稱",
+      "nicknamePlaceholder": "搜索昵稱",
+      "orderNo": "單號",
+      "orderNoPlaceholder": "搜索單號",
+      "uid": "UID",
+      "uidPlaceholder": "搜索UID"
+    },
+    "rejectConfirmation": {
+      "confirm": "拒絕",
+      "failed": "拒絕提現失敗",
+      "message": "請輸入拒絕原因：",
+      "reasonPlaceholder": "輸入拒絕原因",
+      "reasonRequired": "請輸入拒絕原因",
+      "rejecting": "正在處理拒絕...",
+      "success": "提現已拒絕",
+      "title": "拒絕提現"
+    },
+    "status": {
+      "confirmed": "已確認",
+      "error": "錯誤",
+      "failed": "失敗",
+      "idle_for_tron_bandwith": "等待TRON帶寬",
+      "pending": "已通過",
+      "processing": "處理中",
+      "rejected": "已拒絕",
+      "success": "成功",
+      "under_review": "審核中"
+    },
+    "table": {
+      "actions": "操作",
+      "balanceAfter": "變化後餘額",
+      "balanceBefore": "變化前餘額",
+      "chainNetwork": "鏈網絡",
+      "createdAt": "創建時間",
+      "fee": "手續費",
+      "nickname": "暱稱",
+      "orderNo": "單號",
+      "rejectReason": "拒絕原因",
+      "remark": "備註",
+      "status": "狀態",
+      "uid": "UID",
+      "withdrawalAddress": "提現地址",
+      "withdrawalAmount": "提現金額"
+    }
+  }
+}
