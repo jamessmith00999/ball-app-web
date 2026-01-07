@@ -1,75 +1,129 @@
-# React + TypeScript + Vite
+# Ball App Web - Sports Betting & Trading Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ball App Web is the web version of Ball App, a dual-mode application integrating sports betting and cryptocurrency trading features.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Sports Betting Mode
+- Real-time sports event betting
+- Multiple sports support (Football, Basketball, Tennis, etc.)
+- Live odds updates
+- Betting history tracking
 
-## React Compiler
+### Trading Mode
+- Cryptocurrency trading
+- K-line chart visualization
+- Asset management
+- Earnings statistics
+- Community forum
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- **Framework**: React 19 + Vite (Rolldown)
+- **Styling**: TailwindCSS v4 + Sass
+- **Data Fetching**: SWR + Axios
+- **Authentication**: better-auth
+- **Internationalization**: i18next (Multi-language support)
+- **Language**: TypeScript
+- **Build Optimization**: React Compiler, JavaScript Obfuscator
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js >= 18
+- npm, yarn, or bun
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Environment Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Copy the example environment file and configure your variables:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cp .env.example .env
 ```
+
+### Development Commands
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Code linting
+npm run lint
+```
+
+## Project Structure
+
+```
+ball-app-web/
+├── public/                 # Static public assets
+├── src/
+│   ├── api/               # API layer
+│   │   ├── auth/          # Authentication API
+│   │   ├── sports/        # Sports betting API
+│   │   │   ├── config/    # Sports configuration
+│   │   │   ├── early/     # Early betting
+│   │   │   ├── favorites/ # User favorites
+│   │   │   ├── inplay/    # Live betting
+│   │   │   ├── leagues/   # League data
+│   │   │   └── matches/   # Match data
+│   │   └── futures/       # Trading API
+│   │       ├── assets/    # User assets
+│   │       ├── market/    # Market data
+│   │       ├── orders/    # Trading orders
+│   │       ├── positions/ # Trading positions
+│   │       └── ...
+│   ├── assets/            # Static assets
+│   │   ├── fonts/         # Custom fonts
+│   │   ├── images/        # Images and icons
+│   │   ├── audio/         # Audio files
+│   │   └── html/          # Chart HTML templates
+│   ├── config/            # App configuration
+│   ├── constants/         # Constants
+│   │   ├── sports/        # Sports-related constants
+│   │   └── trading/       # Trading-related constants
+│   ├── lib/               # Utility libraries
+│   ├── translations/      # i18n translations
+│   ├── App.tsx            # Root component
+│   ├── main.tsx           # Entry point
+│   └── index.css          # Global styles
+├── scripts/               # Build scripts
+├── .env.example           # Environment variables template
+├── vite.config.ts         # Vite configuration
+└── tsconfig.json          # TypeScript configuration
+```
+
+## API Integration
+
+- APIs use TypeScript type definitions
+- Each API module has `index.ts` (functions) and `types.ts` (type definitions)
+- SWR for data fetching with caching
+- Axios for HTTP requests
+
+## Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This is a private project. All rights reserved.
+
+## Related Projects
+
+- [Ball App](../ball-app) - React Native mobile application
