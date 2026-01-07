@@ -13,8 +13,11 @@ export interface Token {
 }
 
 export interface Config {
+  sportsApiBaseUrl: string;
   betterAuthUrl: string;
   futuresApiUrl: string;
+  wssUrl: string;
+  officialWebsiteUrl: string;
   betterAuth: {
     scheme: string;
     storagePrefix: string;

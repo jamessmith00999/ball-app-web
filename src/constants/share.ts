@@ -2,8 +2,10 @@
  * Share-related constants
  */
 
+import config from "@/config";
+
 // Share URL template - uses official website URL from environment
-export const SHARE_BASE_URL = `${import.meta.env.VITE_OFFICIAL_WEBSITE_URL}`;
+export const SHARE_BASE_URL = `${config.betterAuthUrl}`;
 
 /**
  * Generate share URL with invitation code

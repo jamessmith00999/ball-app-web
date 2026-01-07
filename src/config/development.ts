@@ -15,8 +15,11 @@ import {
 import type { Config } from "./type";
 
 const config: Config = {
-  betterAuthUrl: "",
-  futuresApiUrl: "",
+  sportsApiBaseUrl: "https://ball-api.miningnow.org",
+  betterAuthUrl: "https://ex-auth.miningnow.org",
+  futuresApiUrl: "https://ex-api.miningnow.org",
+  wssUrl: "wss://ball-ws-paid.workinjp.workers.dev/ws",
+  officialWebsiteUrl: "https://bestxx-official-website.pages.dev",
   betterAuth: {
     scheme: "mewp",
     storagePrefix: "mewp-auth",

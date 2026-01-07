@@ -34,13 +34,3 @@ i18n.use(initReactI18next).init({
     escapeValue: false, // react already safes from xss
   },
 });
-
-// .init({
-//   resources,
-//   lng: getLanguage().code, //default language
-//   fallbackLng: "en", //when specified language translations not present
-//   debug: import.meta.env?.VITE_I18N_DEBUG === true,
-//   interpolation: {
-//     escapeValue: false, // react already safes from xss
-//   },
-// });

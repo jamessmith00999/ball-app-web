@@ -2,9 +2,10 @@ import axios from "axios";
 
 import { getOneTimeToken } from "@/lib";
 import { getLanguageFromAsyncStorage } from "@/lib/storage";
+import config from "@/config";
 
 const sportsApi = axios.create({
-  baseURL: import.meta.env.VITE_SPORTS_API_BASE_URL,
+  baseURL: config.sportsApiBaseUrl,
   headers: {
     "Content-Type": "application/json",
   },

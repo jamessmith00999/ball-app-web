@@ -2,8 +2,7 @@
 
 interface ImportMetaEnv {
   readonly VITE_I18N_DEBUG: boolean;
-  readonly VITE_WEB_APP: "development" | "preview" | "production";
-  readonly VITE_OFFICIAL_WEBSITE_URL: string;
+  readonly VITE_WEB_APP: "development" | "staging" | "production";
 }
 
 interface ImportMeta {

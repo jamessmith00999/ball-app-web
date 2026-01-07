@@ -15,8 +15,11 @@ import {
 import type { Config } from "./type";
 
 const config: Config = {
-  betterAuthUrl: "",
-  futuresApiUrl: "",
+  sportsApiBaseUrl: "https://sports-api.fomoins.com",
+  betterAuthUrl: "https://auth-api.fomoins.com",
+  futuresApiUrl: "https://ex-api.fomoins.com",
+  wssUrl: "wss://ball-ws-paid.workinjp.workers.dev/ws",
+  officialWebsiteUrl: "https://www.fomoins.com",
   betterAuth: {
     scheme: "mewp",
     storagePrefix: "mewp-auth",
